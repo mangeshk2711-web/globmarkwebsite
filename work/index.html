@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work &amp; Case Studies | Globmark</title>
+  <meta name="description" content="Sample projects showing how Globmark approaches web development, performance marketing and SEO. Real client case studies are coming soon.">
+  <meta name="keywords" content="Globmark, Custom Web Development, Next.js Development, High-ROAS Performance Marketing, Meta Ads, Google Ads Agency, Global SEO, AI Automation, Website Design">
+  <meta name="author" content="Globmark Digital Agency">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://globmark.agency/work/">
+
+  <!-- OpenGraph Metadata for Social Media & Google Rich Previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://globmark.agency/work/">
+  <meta property="og:title" content="Our Work &amp; Case Studies | Globmark">
+  <meta property="og:description" content="Sample projects showing how Globmark approaches web development, performance marketing and SEO. Real client case studies are coming soon.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:site_name" content="Globmark">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Our Work &amp; Case Studies | Globmark">
+  <meta name="twitter:description" content="Sample projects showing how Globmark approaches web development, performance marketing and SEO. Real client case studies are coming soon.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- TODO: replace the Unsplash og:image/twitter:image above with your own branded 1200x630 image -->
+  <!-- TODO: add analytics here (GA4 / Meta Pixel), e.g. the gtag.js snippet from your Google Analytics account -->
+  <!-- Theme color for mobile browser chrome -->
+  <meta name="theme-color" content="#030814">
+
+  <!-- ==================== EMBEDDED JSON-LD STRUCTURED DATA FOR GOOGLE SEARCH ==================== -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://globmark.agency/#organization",
+      "name": "Globmark",
+      "url": "https://globmark.agency/",
+      "logo": "https://globmark.agency/logo.png",
+      "slogan": "Build • Grow • Scale",
+      "description": "Digital agency offering web development and website design, performance marketing, SEO, YouTube and social ads, and AI automation for businesses in India and worldwide.",
+      "sameAs": [
+        "https://www.linkedin.com/company/globmark",
+        "https://www.instagram.com/globmark.agency",
+        "https://twitter.com/globmark"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support & Strategy",
+        "email": "hello@globmark.agency",
+        "availableLanguage": [
+          "English",
+          "Hindi"
+        ]
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://globmark.agency/#service",
+      "name": "Globmark Digital Agency",
+      "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "India"
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Digital Growth Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Custom Web Development & Website Design"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Performance Digital Marketing (Meta & Google Ads)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Global & Technical Search Engine Optimization (SEO)"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "AI Automation for Business"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://globmark.agency/#website",
+      "url": "https://globmark.agency/",
+      "name": "Globmark",
+      "publisher": {
+        "@id": "https://globmark.agency/#organization"
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- Self-hosted Plus Jakarta Sans Variable Font (preloaded to eliminate external DNS/CSS blocking) -->
+  <link rel="preload" href="../assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Icons are inline SVG now (no Font Awesome download) -->
+
+
+</head>
+<body data-page="work" data-root="../" class="text-slate-800 antialiased selection:bg-brand-lime selection:text-black min-h-screen flex flex-col justify-between">
+
+  <!-- ==================== STICKY TOP NAVIGATION ==================== -->
+  <header id="mainNav" class="fixed top-0 left-0 right-0 z-50 bg-[#030814]/95 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="/" onclick="navigate('home'); return false;" class="flex items-center gap-3 group" aria-label="Globmark Home">
+        <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-brand-lime via-[#9ee215] to-[#c7ff42] flex items-center justify-center p-1 shadow-lg shadow-brand-lime/20 group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-[#040915] rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-brand-lime" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.52 0 10-4.48 10-10 0-.55-.45-1-1-1h-9v3h6.74c-.58 2.84-2.84 5-5.74 5-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78l2.12-2.12C17.65 3.37 14.97 2 12 2z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-white text-xl sm:text-2xl font-extrabold tracking-tight leading-tight">Globmark</span>
+          <span class="text-slate-300 text-[11px] uppercase font-bold tracking-[0.22em] text-opacity-80">Build · Grow · Scale</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-300" aria-label="Primary Navigation">
+        <a href="/" onclick="navigate('home'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="home">Home</a>
+        <a href="/work/" onclick="navigate('work'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="work">Our Work</a>
+        <a href="/about/" onclick="navigate('about'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="about">About Us</a>
+        <a href="/faqs/" onclick="navigate('faqs'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="faqs">FAQs</a>
+        <a href="/blog/" onclick="navigate('blog'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="blog">Blog</a>
+        <a href="/contact/" onclick="navigate('contact'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="contact">Contact</a>
+      </nav>
+
+      <!-- Right Header Actions (Consultation CTA & Mobile Toggle) -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <button onclick="navigate('contact')" class="btn-lime text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-full flex items-center gap-2 font-bold shadow-md">
+          <span>Get a Free Consultation</span>
+          <svg class="ic text-xs" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="lg:hidden text-white text-xl p-2.5 rounded-md hover:bg-white/10 focus:outline-none" aria-label="Toggle navigation menu">
+          <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#061025]/98 border-b border-white/10 px-6 py-5 space-y-3 text-slate-200 font-medium text-sm">
+      <button onclick="navigate('home'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">Home</button>
+      <button onclick="navigate('work'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">Our Work</button>
+      <button onclick="navigate('about'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">About Us</button>
+      <button onclick="navigate('faqs'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">FAQs</button>
+      <button onclick="navigate('blog'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">Blog</button>
+      <button onclick="navigate('contact'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">Contact</button>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN PAGE CONTAINER (CLIENT-SIDE ROUTING) ==================== -->
+  <main class="flex-grow pt-16">
+
+    <!-- Global chase canvas fixed across whole page -->
+    <canvas id="globalChaseCanvas" aria-hidden="true"></canvas>
+
+    <!-- ==================== PAGE 1: HOME ==================== -->
+    
+
+    <!-- ==================== PAGE 2: OUR WORK (CASE STUDIES) ==================== -->
+    <div id="page-work" class="page-view">
+      <div class="bg-[#030814] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10">
+        <div class="max-w-7xl mx-auto text-center">
+          <span class="text-brand-lime text-xs font-bold uppercase tracking-widest badge-neon px-4 py-1.5 rounded-full inline-block mb-3">Our Work</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Our Work &amp; Case Studies</h2>
+          <p class="text-slate-300 mt-3 max-w-2xl mx-auto text-sm sm:text-base">Sample projects shown for illustration. Real client case studies will be added soon.</p>
+          
+          <!-- Category Filter Tabs -->
+          <div class="flex flex-wrap items-center justify-center gap-2 mt-8" id="portfolioFilter">
+            <button onclick="filterPortfolio('all')" class="portfolio-tab-btn px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-brand-lime text-black transition-all" data-cat="all">All Projects</button>
+            <button onclick="filterPortfolio('web')" class="portfolio-tab-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white hover:bg-white/20 transition-all" data-cat="web">Web &amp; Next.js</button>
+            <button onclick="filterPortfolio('ads')" class="portfolio-tab-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white hover:bg-white/20 transition-all" data-cat="ads">Paid Ads &amp; ROAS</button>
+            <button onclick="filterPortfolio('seo')" class="portfolio-tab-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white hover:bg-white/20 transition-all" data-cat="seo">Organic &amp; Global SEO</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolioGrid">
+          
+          <!-- Project 1 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="web">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="MathsWaala EdTech Platform Developed by Globmark" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">Next.js &bull; Supabase</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">MathsWaala EdTech Platform</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Custom Next.js Portal &bull; Live Batch Management</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Engineered a zero-lag student assessment portal with integrated payment gateways and automated video lesson streaming.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Page Speed</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Monthly Users</span>
+                    <span class="text-blue-600 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('mathswaala')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="ads">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Break Shot Waffles Paid Social Campaign" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">Meta Ads &bull; Hyperlocal</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">Break Shot Waffles &amp; Cafe</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Hyperlocal Performance Campaign &bull; Scaling Chain</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Targeted geo-fenced Instagram and Facebook video campaigns driving in-store foot traffic and online orders.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Store Walk-ins</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Ad Spend</span>
+                    <span class="text-blue-600 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('waffles')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="seo">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Vedika Vedanshi SEO Growth" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">Organic SEO &bull; Google Maps</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">Vedika Vedanshi Enterprises</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Google Business Profile Domination &bull; Pan-India B2B</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Full citation audit, Geo-tagged image optimization and review automation capturing high-intent B2B inquiries across India.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Direct Phone Inquiries</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Google Search Views</span>
+                    <span class="text-blue-600 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('vedika')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="web">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Postal Knowledge Portal by Globmark" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">React &bull; Python Portal</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">Postal Knowledge Hub</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Resource &amp; Regulatory Portal &bull; Pan India</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  High-capacity competitive exam preparation repository built for fast, reliable search and browsing.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Google Core Web Vitals</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Search Organic</span>
+                    <span class="text-blue-600 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('postal')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="ads">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" alt="B2B Manufacturing Lead Engine" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">Google Ads &bull; High Intent</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">Apex Polychem Pvt Ltd</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Google Search Ads &bull; Industrial Polymers</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Eliminated negative keywords and built high-converting landing pages focused on lowering Cost Per Qualified Lead.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">CPL Reduction</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Monthly Deal Value</span>
+                    <span class="text-blue-600 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('apex')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="seo">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Healthcare SEO Domination" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">Local &amp; Global SEO &bull; Healthcare</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">Dr. Sheth's Smile Studio</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Medical Clinic SEO &bull; Multi-Location Brand</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Boosted Google Map directions requests and automated WhatsApp appointment confirmations for high-ticket dental procedures.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">New Patients / mo</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Google Star Rating</span>
+                    <span class="text-amber-500 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('smile')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== PAGE 3: ABOUT US ==================== -->
+    
+
+    <!-- ==================== PAGE 4: FAQS ==================== -->
+    
+
+    <!-- ==================== PAGE 5: BLOG / KNOWLEDGE HUB ==================== -->
+    
+
+    <!-- ==================== PAGE 6: CONTACT & CONSULTATION BOOKER ==================== -->
+    
+
+      <!-- ==================== PAGE 7: PRIVACY POLICY ==================== -->
+      
+
+      <!-- ==================== PAGE 8: TERMS OF SERVICE ==================== -->
+      
+
+
+  </main>
+
+  <!-- ==================== FOOTER & TRUST BAR ==================== -->
+  <footer class="bg-white border-t border-slate-200 pt-10 pb-8 text-slate-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Credentials Bar -->
+      <div class="pb-10 border-b border-slate-200 flex flex-wrap items-center justify-between gap-6">
+        
+        <div class="flex items-center gap-6 sm:gap-8">
+          <!-- Meta -->
+          <div class="flex items-center gap-2">
+            <svg class="w-6 h-6 text-[#0064e0]" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 16.5c-2.4 0-4.1-1.6-4.9-3.7-.8-2.1-.2-4.4 1.5-5.7 1.7-1.3 4.1-1.3 5.8 0 1.7 1.3 2.3 3.6 1.5 5.7-.8 2.1-2.5 3.7-4.9 3.7h1z M12 6.5C8.9 6.5 6.3 8.8 5.7 11.8c-.6 3 1.1 5.9 3.9 6.9 2.8 1 5.9 0 7.3-2.5.6-1 1-2.2 1.1-3.4 0-1.8-.7-3.6-2-4.8-1.1-1-2.5-1.5-4-1.5z"/>
+            </svg>
+            <span class="font-extrabold text-base tracking-tight text-[#0064e0]">Meta</span>
+          </div>
+
+          <!-- Google Ads -->
+          <div class="flex items-center gap-2">
+            <svg class="w-6 h-6" viewBox="0 0 48 48">
+              <path fill="#FBBC04" d="M10.7 27.6l10.9-18.9c1.4-2.4 4.5-3.3 6.9-1.9 2.4 1.4 3.3 4.5 1.9 6.9L19.5 32.6c-1.4 2.4-4.5 3.3-6.9 1.9-2.4-1.4-3.3-4.5-1.9-6.9z"/>
+              <path fill="#4285F4" d="M37.3 32.6l-10.9-18.9c-1.4-2.4-4.5-3.3-6.9-1.9-2.4 1.4-3.3 4.5-1.9 6.9l10.9 18.9c1.4 2.4 4.5 3.3 6.9 1.9 2.4-1.4 3.3-4.5 1.9-6.9z"/>
+              <circle fill="#34A853" cx="15.2" cy="34.5" r="5.2"/>
+            </svg>
+            <span class="font-bold text-xs sm:text-sm text-slate-800">Google Ads</span>
+          </div>
+
+          <!-- Google Partner -->
+          <div class="hidden sm:flex items-center gap-2">
+            <svg viewBox="0 0 24 24" class="w-5 h-5">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span class="font-semibold text-xs sm:text-sm text-slate-700">Google Partner</span>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-3 text-xs font-medium text-slate-500">
+          <span>Trusted Digital Partner for Scaling Brands Across India &amp; Worldwide</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs shadow-sm">
+            <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"/></svg>
+          </div>
+          <span class="text-xs sm:text-sm font-bold text-slate-800 tracking-tight">Your Success. Our Priority.</span>
+        </div>
+
+      </div>
+
+      <!-- Main Footer Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 py-10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <a href="/" onclick="navigate('home'); return false;" class="flex items-center gap-3" aria-label="Globmark Footer Brand">
+            <div class="w-9 h-9 rounded-full bg-slate-900 flex items-center justify-center text-brand-lime">
+              <svg class="ic text-sm" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M338.8-9.9c11.9 8.6 16.3 24.2 10.9 37.8L271.3 224 416 224c13.5 0 25.5 8.4 30.1 21.1s.7 26.9-9.6 35.5l-288 240c-11.3 9.4-27.4 9.9-39.3 1.3s-16.3-24.2-10.9-37.8L176.7 288 32 288c-13.5 0-25.5-8.4-30.1-21.1s-.7-26.9 9.6-35.5l288-240c11.3-9.4 27.4-9.9 39.3-1.3z"/></svg>
+            </div>
+            <span class="text-xl font-extrabold text-slate-900 tracking-tight">Globmark</span>
+          </a>
+          <p class="text-xs sm:text-sm text-slate-500 max-w-sm leading-relaxed">
+            A high-velocity digital marketing and custom software engineering agency. We replace slow templates and wasted ad budgets with measurable revenue systems.
+          </p>
+          <div class="flex items-center gap-3 text-slate-400 pt-1">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all"><svg class="ic text-xs" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all"><svg class="ic text-xs" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></svg></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all"><svg class="ic text-xs" viewBox="0 0 320 512" fill="currentColor" aria-hidden="true"><path d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"/></svg></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all"><svg class="ic text-xs" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Navigation</h5>
+          <ul class="space-y-2 text-xs font-medium">
+            <li><a href="/" onclick="navigate('home'); return false;" class="hover:text-blue-600">Home</a></li>
+            <li><a href="/work/" onclick="navigate('work'); return false;" class="hover:text-blue-600">Our Work (Portfolio)</a></li>
+            <li><a href="/about/" onclick="navigate('about'); return false;" class="hover:text-blue-600">About Globmark</a></li>
+            <li><a href="/faqs/" onclick="navigate('faqs'); return false;" class="hover:text-blue-600">FAQs</a></li>
+            <li><a href="/blog/" onclick="navigate('blog'); return false;" class="hover:text-blue-600">Knowledge Hub</a></li>
+            <li><a href="/contact/" onclick="navigate('contact'); return false;" class="hover:text-blue-600">Contact &amp; Audit</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Services</h5>
+          <ul class="space-y-2 text-xs font-medium">
+            <li><button onclick="openServiceDetail('web')" class="hover:text-blue-600">Web Development &amp; Website Design</button></li>
+            <li><button onclick="openServiceDetail('marketing')" class="hover:text-blue-600">Performance Digital Marketing</button></li>
+            <li><button onclick="openServiceDetail('seo')" class="hover:text-blue-600">Google Business Profile &amp; Global SEO</button></li>
+            <li><button onclick="openServiceDetail('youtube')" class="hover:text-blue-600">YouTube Marketing</button></li>
+            <li><button onclick="openServiceDetail('social')" class="hover:text-blue-600">Social Media Ads</button></li>
+            <li><button onclick="openServiceDetail('ai')" class="hover:text-blue-600">AI Automation for Business</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">SEO &amp; Newsletter</h5>
+          <p class="text-xs text-slate-500 mb-3">Get our monthly growth and web engineering teardowns.</p>
+          <form onsubmit="handleNewsletter(event)" class="space-y-2">
+            <input type="email" required placeholder="Enter work email..." class="w-full px-3 py-2 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-brand-blueAccent" aria-label="Newsletter Email">
+            <button type="submit" class="w-full bg-[#030814] text-white hover:bg-black font-bold py-2 rounded-lg text-xs transition-colors">
+              Subscribe Free
+            </button>
+          </form>
+          <div class="pt-3">
+            <button onclick="openModal('seoModal')" class="inline-flex items-center gap-1.5 text-xs text-blue-600 font-bold hover:underline">
+              <svg class="ic" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M192 64c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-8 0 0 64 120 0c39.8 0 72 32.2 72 72l0 56 8 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l8 0 0-56c0-13.3-10.7-24-24-24l-120 0 0 80 8 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l8 0 0-80-120 0c-13.3 0-24 10.7-24 24l0 56 8 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l8 0 0-56c0-39.8 32.2-72 72-72l120 0 0-64-8 0c-17.7 0-32-14.3-32-32l0-64z"/></svg>
+              <span>View Sitemap &amp; SEO Tools</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-200 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+        <span>&copy; <span id="currentYear"></span> Globmark Digital Agency. Build &bull; Grow &bull; Scale. All rights reserved.</span>
+        <div class="flex items-center gap-4">
+          <button onclick="openModal('seoModal')" class="hover:underline text-blue-600 font-semibold">Sitemap (XML)</button>
+          <a href="/privacy/" onclick="navigate('privacy'); return false;" class="hover:underline">Privacy Policy</a>
+          <a href="/terms/" onclick="navigate('terms'); return false;" class="hover:underline">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== INTERACTIVE MODALS ==================== -->
+
+  <!-- SEO, SITEMAP & TECHNICAL AUDIT MODAL (BUILT FOR NON-TECH USERS) -->
+  <div id="seoModal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-[#030814] text-white border border-white/20 rounded-3xl max-w-3xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('seoModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl" aria-label="Close modal">
+        <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-brand-lime text-black flex items-center justify-center text-lg font-bold">
+          <svg class="ic" viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M248 88l80 0 0 48-80 0 0-48zm-8-56c-26.5 0-48 21.5-48 48l0 64c0 26.5 21.5 48 48 48l16 0 0 32-224 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0 0 32-16 0c-26.5 0-48 21.5-48 48l0 64c0 26.5 21.5 48 48 48l96 0c26.5 0 48-21.5 48-48l0-64c0-26.5-21.5-48-48-48l-16 0 0-32 192 0 0 32-16 0c-26.5 0-48 21.5-48 48l0 64c0 26.5 21.5 48 48 48l96 0c26.5 0 48-21.5 48-48l0-64c0-26.5-21.5-48-48-48l-16 0 0-32 96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-224 0 0-32 16 0c26.5 0 48-21.5 48-48l0-64c0-26.5-21.5-48-48-48l-96 0zM448 376l8 0 0 48-80 0 0-48 72 0zm-256 0l8 0 0 48-80 0 0-48 72 0z"/></svg>
+        </div>
+        <div>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-white">SEO &amp; Sitemap Toolbox</h3>
+          <p class="text-xs text-brand-lime font-medium">Ready for Google Search Console, Bing, and Search Engine Bots</p>
+        </div>
+      </div>
+
+      <p class="text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+        Because you don't have to be technical, we've pre-configured your website's search engine directives, canonical setup, and XML sitemap. You can copy or download these anytime for your domain.
+      </p>
+
+      <!-- Tab Buttons for SEO Tools -->
+      <div class="flex gap-2 border-b border-white/10 pb-3 mb-4 text-xs font-bold">
+        <button onclick="switchSeoTab('sitemap')" id="tabBtn-sitemap" class="px-4 py-2 rounded-lg bg-brand-lime text-black">XML Sitemap</button>
+        <button onclick="switchSeoTab('robots')" id="tabBtn-robots" class="px-4 py-2 rounded-lg bg-white/10 text-white hover:bg-white/20">robots.txt</button>
+        <button onclick="switchSeoTab('checklist')" id="tabBtn-checklist" class="px-4 py-2 rounded-lg bg-white/10 text-white hover:bg-white/20">SEO Health Checklist</button>
+      </div>
+
+      <!-- Tab 1: XML Sitemap -->
+      <div id="seoTab-sitemap" class="space-y-3">
+        <div class="flex items-center justify-between text-xs text-slate-400">
+          <span>Standard Google XML Sitemap protocol</span>
+          <button onclick="copyToClipboard('sitemapCodeSnippet', 'XML Sitemap copied to clipboard!')" class="text-brand-lime hover:underline flex items-center gap-1 font-bold">
+            <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg> Copy XML
+          </button>
+        </div>
+        <pre class="bg-black/80 p-4 rounded-xl text-xs font-mono text-emerald-400 overflow-x-auto border border-white/10 max-h-52 select-all" id="sitemapCodeSnippet">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/work/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/about/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/faqs/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/blog/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/contact/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/privacy/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/terms/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;</pre>
+      </div>
+
+      <!-- Tab 2: robots.txt -->
+      <div id="seoTab-robots" class="space-y-3 hidden">
+        <div class="flex items-center justify-between text-xs text-slate-400">
+          <span>Search crawler directive file (/robots.txt)</span>
+          <button onclick="copyToClipboard('robotsCodeSnippet', 'robots.txt copied to clipboard!')" class="text-brand-lime hover:underline flex items-center gap-1 font-bold">
+            <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg> Copy robots.txt
+          </button>
+        </div>
+        <pre class="bg-black/80 p-4 rounded-xl text-xs font-mono text-emerald-400 overflow-x-auto border border-white/10 max-h-52 select-all" id="robotsCodeSnippet">User-agent: *
+Allow: /
+
+# Direct search engine crawlers to the sitemap
+Sitemap: https://globmark.agency/sitemap.xml</pre>
+      </div>
+
+      <!-- Tab 3: SEO Checklist -->
+      <div id="seoTab-checklist" class="space-y-3 hidden text-xs text-slate-300">
+        <div class="bg-white/5 p-3 rounded-xl border border-white/10 flex items-start gap-2.5">
+          <svg class="ic text-brand-lime text-base mt-0.5" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg>
+          <div>
+            <strong class="text-white block">JSON-LD Rich Schema Implemented:</strong>
+            Active Organization, ProfessionalService, WebSite, and Google FAQPage schemas are already injected inside the &lt;head&gt;.
+          </div>
+        </div>
+        <div class="bg-white/5 p-3 rounded-xl border border-white/10 flex items-start gap-2.5">
+          <svg class="ic text-brand-lime text-base mt-0.5" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg>
+          <div>
+            <strong class="text-white block">Single H1 Hierarchy &amp; Semantic Tags:</strong>
+            Standardized heading hierarchy for clean crawlability and keyword relevance.
+          </div>
+        </div>
+        <div class="bg-white/5 p-3 rounded-xl border border-white/10 flex items-start gap-2.5">
+          <svg class="ic text-brand-lime text-base mt-0.5" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg>
+          <div>
+            <strong class="text-white block">Mobile Friendly &amp; Zero Horizontal Overflow:</strong>
+            Fluid layouts, responsive breakpoints, and minimum 44px touch targets.
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-white/10 flex justify-end">
+        <button onclick="closeModal('seoModal')" class="btn-lime px-6 py-2.5 rounded-full text-xs font-bold">
+          Done &amp; Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video / Story Modal -->
+  <div id="storyModal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-[#061025] border border-white/20 rounded-3xl max-w-2xl w-full p-6 sm:p-8 text-white relative shadow-2xl">
+      <button onclick="closeModal('storyModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl" aria-label="Close modal">
+        <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center text-lg">
+          <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M0 96C0 60.7 28.7 32 64 32l320 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM48 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm304-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM48 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm304-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM48 112l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16L64 96c-8.8 0-16 7.2-16 16zM352 96c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0z"/></svg>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">The Globmark Journey</h3>
+          <span class="text-xs text-brand-lime">Engineering &amp; Growth Retrospective</span>
+        </div>
+      </div>
+
+      <div class="relative aspect-video rounded-2xl bg-black overflow-hidden border border-white/10 mb-5 flex items-center justify-center group">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Team Session" class="w-full h-full object-cover opacity-60" loading="lazy" decoding="async">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="relative z-10 text-center px-4">
+          <div class="w-16 h-16 rounded-full bg-brand-lime text-black flex items-center justify-center text-xl mx-auto shadow-lg shadow-brand-lime/40 mb-3 animate-pulse">
+            <svg class="ic ml-1" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M91.2 36.9c-12.4-6.8-27.4-6.5-39.6 .7S32 57.9 32 72l0 368c0 14.1 7.5 27.2 19.6 34.4s27.2 7.5 39.6 .7l336-184c12.8-7 20.8-20.5 20.8-35.1s-8-28.1-20.8-35.1l-336-184z"/></svg>
+          </div>
+          <span class="font-bold text-sm tracking-wide">Interactive Showcase: How We Scale Client Revenue</span>
+        </div>
+      </div>
+
+      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+        Founded by software architects and performance marketers, Globmark was created to solve the persistent disconnect between pretty web designs and actual cash receipts. See how our custom Next.js builds improve speed and engagement while our Meta and Google campaigns focus on measurable, ROAS-driven results.
+      </p>
+
+      <div class="flex justify-end gap-3">
+        <button onclick="closeModal('storyModal')" class="px-5 py-2.5 rounded-full border border-white/20 text-xs font-semibold hover:bg-white/10">Close</button>
+        <button onclick="closeModal('storyModal'); navigate('contact');" class="btn-lime px-6 py-2.5 rounded-full text-xs font-bold">Schedule an Intro Call</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service Detail Drawer Modal -->
+  <div id="serviceModal" class="modal-backdrop fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 text-slate-800 relative shadow-2xl">
+      <button onclick="closeModal('serviceModal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 text-xl" aria-label="Close modal">
+        <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+      </button>
+
+      <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blueAccent flex items-center justify-center text-xl mb-4" id="serviceModalIcon">
+        <svg class="ic" viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 150.6 182.6c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+      </div>
+
+      <h3 class="text-2xl font-extrabold text-[#081329] mb-1" id="serviceModalTitle">Service Scope</h3>
+      <span class="text-xs font-bold text-emerald-600 block mb-4" id="serviceModalBadge">Turnkey Solution</span>
+
+      <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5" id="serviceModalDesc">
+        Comprehensive description of service deliverables.
+      </p>
+
+      <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 mb-6">
+        <h5 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Included In This Service</h5>
+        <ul class="text-xs space-y-2 text-slate-700" id="serviceModalFeatures"></ul>
+      </div>
+
+      <div class="flex items-center justify-between gap-4">
+        <div>
+          <span class="text-[11px] text-slate-400 uppercase tracking-wider block">Typical Turnaround</span>
+          <span class="text-xs font-bold text-slate-800" id="serviceModalTimeline">10 - 14 Days</span>
+        </div>
+        <button onclick="closeModal('serviceModal'); navigate('contact');" class="btn-lime px-6 py-2.5 rounded-full text-xs font-bold">
+          Request Custom Proposal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Case Study Detailed Inspection Modal -->
+  <div id="caseStudyModal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-[#030814] text-white border border-white/20 rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('caseStudyModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl" aria-label="Close modal">
+        <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+      </button>
+
+      <div class="inline-block bg-brand-lime text-black text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider mb-2" id="csClientCategory">
+        EdTech &bull; Next.js
+      </div>
+
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-2" id="csTitle">MathsWaala Learning Portal</h3>
+      <p class="text-slate-300 text-xs sm:text-sm mb-6" id="csOverview">Deep dive into project scope and impact.</p>
+
+      <div class="hidden grid-cols-3 gap-3 bg-white/5 p-4 rounded-2xl border border-white/10 mb-6 text-center">
+        <div>
+          <span class="text-[11px] text-slate-400 block" id="csStat1Label">Page Load</span>
+          <span class="text-base sm:text-lg font-bold text-brand-lime" id="csStat1Val">0.38s</span>
+        </div>
+        <div class="border-x border-white/10">
+          <span class="text-[11px] text-slate-400 block" id="csStat2Label">Conversion</span>
+          <span class="text-base sm:text-lg font-bold text-brand-lime" id="csStat2Val">+184%</span>
+        </div>
+        <div>
+          <span class="text-[11px] text-slate-400 block" id="csStat3Label">ROAS</span>
+          <span class="text-base sm:text-lg font-bold text-brand-lime" id="csStat3Val">7.2x</span>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-slate-300 mb-6">
+        <div>
+          <h5 class="text-white font-bold text-sm mb-1">The Challenge:</h5>
+          <p id="csChallenge" class="leading-relaxed text-slate-400">Previous site was on shared hosting and crashed during peak ad spikes.</p>
+        </div>
+        <div>
+          <h5 class="text-white font-bold text-sm mb-1">Globmark's Solution:</h5>
+          <p id="csSolution" class="leading-relaxed text-slate-400">Migrated everything to Next.js on Vercel with edge caching, automated CRM lead capture, and custom analytics tracking.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between pt-4 border-t border-white/10">
+        <span class="text-xs text-slate-400">Technology: <strong class="text-white" id="csTech">Next.js 14, Tailwind, Supabase</strong></span>
+        <button onclick="closeModal('caseStudyModal'); navigate('contact');" class="btn-lime px-5 py-2.5 rounded-full text-xs font-bold">
+          Build A Similar System
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Reading Modal -->
+  <div id="articleModal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-3xl w-full p-6 sm:p-10 text-slate-800 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('articleModal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 text-xl" aria-label="Close modal">
+        <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+      </button>
+
+      <span class="text-xs font-bold text-blue-600 uppercase tracking-widest block mb-2" id="articleCategory">Case Study &bull; Marketing</span>
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-[#081329] mb-4 leading-tight" id="articleTitle">Article Title</h3>
+      
+      <div class="flex items-center gap-3 text-xs text-slate-500 pb-5 mb-5 border-b border-slate-200">
+        <div class="w-7 h-7 rounded-full bg-slate-900 text-brand-lime flex items-center justify-center font-bold text-[11px]">GM</div>
+        <span>By Globmark Engineering &amp; Strategy Team</span>
+        <span>&bull;</span>
+        <span id="articleDate">5 min read</span>
+      </div>
+
+      <div class="prose text-xs sm:text-sm text-slate-600 leading-relaxed space-y-4" id="articleBody">
+        <!-- Injected dynamically -->
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-slate-200 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-2 text-xs font-bold text-slate-700">
+          <span>Share this framework:</span>
+          <button onclick="copyCurrentUrl()" class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200"><svg class="ic" viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M419.5 96c-16.6 0-32.7 4.5-46.8 12.7-15.8-16-34.2-29.4-54.5-39.5 28.2-24 64.1-37.2 101.3-37.2 86.4 0 156.5 70 156.5 156.5 0 41.5-16.5 81.3-45.8 110.6l-71.1 71.1c-29.3 29.3-69.1 45.8-110.6 45.8-86.4 0-156.5-70-156.5-156.5 0-1.5 0-3 .1-4.5 .5-17.7 15.2-31.6 32.9-31.1s31.6 15.2 31.1 32.9c0 .9 0 1.8 0 2.6 0 51.1 41.4 92.5 92.5 92.5 24.5 0 48-9.7 65.4-27.1l71.1-71.1c17.3-17.3 27.1-40.9 27.1-65.4 0-51.1-41.4-92.5-92.5-92.5zM275.2 173.3c-1.9-.8-3.8-1.9-5.5-3.1-12.6-6.5-27-10.2-42.1-10.2-24.5 0-48 9.7-65.4 27.1L91.1 258.2c-17.3 17.3-27.1 40.9-27.1 65.4 0 51.1 41.4 92.5 92.5 92.5 16.5 0 32.6-4.4 46.7-12.6 15.8 16 34.2 29.4 54.6 39.5-28.2 23.9-64 37.2-101.3 37.2-86.4 0-156.5-70-156.5-156.5 0-41.5 16.5-81.3 45.8-110.6l71.1-71.1c29.3-29.3 69.1-45.8 110.6-45.8 86.6 0 156.5 70.6 156.5 156.9 0 1.3 0 2.6 0 3.9-.4 17.7-15.1 31.6-32.8 31.2s-31.6-15.1-31.2-32.8c0-.8 0-1.5 0-2.3 0-33.7-18-63.3-44.8-79.6z"/></svg> Copy Link</button>
+        </div>
+        <button onclick="closeModal('articleModal'); navigate('contact')" class="btn-lime px-6 py-2 rounded-full text-xs font-bold">
+          Consult With Globmark
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-[#061025] text-white border border-brand-lime/40 px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 transform translate-y-32 transition-transform duration-300">
+    <div class="w-7 h-7 rounded-full bg-brand-lime text-black flex items-center justify-center text-xs font-bold">
+      <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"/></svg>
+    </div>
+    <div>
+      <h6 class="text-xs font-bold" id="toastTitle">Success</h6>
+      <p class="text-[11px] text-slate-300" id="toastMsg">Inquiry sent successfully.</p>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT APP LOGIC ==================== -->
+  <script src="../script.js" defer></script>
+
+</body>
+</html>

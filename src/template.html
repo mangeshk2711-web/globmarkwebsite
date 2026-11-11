@@ -1,0 +1,1831 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Globmark | Web Development & Performance Marketing Agency</title>
+  <meta name="description" content="Globmark builds fast websites and runs Meta & Google ads and SEO for growing brands in India and worldwide. Book a free strategy audit.">
+  <meta name="keywords" content="Globmark, Custom Web Development, Next.js Development, High-ROAS Performance Marketing, Meta Ads, Google Ads Agency, Global SEO, AI Automation, Website Design">
+  <meta name="author" content="Globmark Digital Agency">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://globmark.agency/">
+
+  <!-- OpenGraph Metadata for Social Media & Google Rich Previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://globmark.agency/">
+  <meta property="og:title" content="Globmark | Build • Grow • Scale Digital Agency">
+  <meta property="og:description" content="Fast websites, Meta & Google ads and SEO for growing brands in India and worldwide. Book a free strategy audit.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:site_name" content="Globmark">
+
+  <!-- Twitter Card Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Globmark | Digital Marketing & Web Development Agency">
+  <meta name="twitter:description" content="Fast websites, Meta & Google ads and SEO for growing brands in India and worldwide.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- TODO: replace the Unsplash og:image/twitter:image above with your own branded 1200x630 image -->
+  <!-- TODO: add analytics here (GA4 / Meta Pixel), e.g. the gtag.js snippet from your Google Analytics account -->
+  <!-- Theme color for mobile browser chrome -->
+  <meta name="theme-color" content="#030814">
+
+  <!-- ==================== EMBEDDED JSON-LD STRUCTURED DATA FOR GOOGLE SEARCH ==================== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://globmark.agency/#organization",
+        "name": "Globmark",
+        "url": "https://globmark.agency/",
+        "logo": "https://globmark.agency/logo.png",
+        "slogan": "Build • Grow • Scale",
+        "description": "Digital agency offering web development and website design, performance marketing, SEO, YouTube and social ads, and AI automation for businesses in India and worldwide.",
+        "sameAs": [
+          "https://www.linkedin.com/company/globmark",
+          "https://www.instagram.com/globmark.agency",
+          "https://twitter.com/globmark"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Support & Strategy",
+          "email": "hello@globmark.agency",
+          "availableLanguage": ["English", "Hindi"]
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://globmark.agency/#service",
+        "name": "Globmark Digital Agency",
+        "image": "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?auto=format&fit=crop&w=1200&q=80",
+        "areaServed": [
+          { "@type": "Country", "name": "India" }
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Digital Growth Services",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Web Development & Website Design" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Performance Digital Marketing (Meta & Google Ads)" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Global & Technical Search Engine Optimization (SEO)" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Automation for Business" } }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://globmark.agency/#website",
+        "url": "https://globmark.agency/",
+        "name": "Globmark",
+        "publisher": { "@id": "https://globmark.agency/#organization" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why build with Next.js instead of traditional CMS like WordPress?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Next.js compiles into lightweight, pre-rendered static assets and server components, delivering fast load times and no plugin bloat, which helps mobile bounce rates and ad conversion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the typical ROAS Globmark clients achieve on Meta & Google Ads?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Results vary by industry, offer and budget. We improve ROAS through first-party server-side tracking (Meta CAPI), negative-keyword cleanup and continuous creative testing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Globmark serve international clients or only India?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Globmark works with businesses in India and worldwide. Contact us to discuss your project and location."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Tailwind CSS CDN -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Self-hosted Plus Jakarta Sans Variable Font (preloaded to eliminate external DNS/CSS blocking) -->
+  <link rel="preload" href="assets/fonts/plus-jakarta-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- Icons are inline SVG now (no Font Awesome download) -->
+
+
+</head>
+<body class="text-slate-800 antialiased selection:bg-brand-lime selection:text-black min-h-screen flex flex-col justify-between">
+
+  <!-- ==================== STICKY TOP NAVIGATION ==================== -->
+  <header id="mainNav" class="fixed top-0 left-0 right-0 z-50 bg-[#030814]/95 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="/" onclick="navigate('home'); return false;" class="flex items-center gap-3 group" aria-label="Globmark Home">
+        <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-brand-lime via-[#9ee215] to-[#c7ff42] flex items-center justify-center p-1 shadow-lg shadow-brand-lime/20 group-hover:scale-105 transition-transform">
+          <div class="w-full h-full bg-[#040915] rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-brand-lime" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.52 0 10-4.48 10-10 0-.55-.45-1-1-1h-9v3h6.74c-.58 2.84-2.84 5-5.74 5-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78l2.12-2.12C17.65 3.37 14.97 2 12 2z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <span class="text-white text-xl sm:text-2xl font-extrabold tracking-tight leading-tight">Globmark</span>
+          <span class="text-slate-300 text-[11px] uppercase font-bold tracking-[0.22em] text-opacity-80">Build · Grow · Scale</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="hidden lg:flex items-center space-x-7 text-sm font-medium text-slate-300" aria-label="Primary Navigation">
+        <a href="/" onclick="navigate('home'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="home">Home</a>
+        <a href="/work/" onclick="navigate('work'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="work">Our Work</a>
+        <a href="/about/" onclick="navigate('about'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="about">About Us</a>
+        <a href="/faqs/" onclick="navigate('faqs'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="faqs">FAQs</a>
+        <a href="/blog/" onclick="navigate('blog'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="blog">Blog</a>
+        <a href="/contact/" onclick="navigate('contact'); return false;" class="nav-link py-1 hover:text-white transition-colors" data-target="contact">Contact</a>
+      </nav>
+
+      <!-- Right Header Actions (Consultation CTA & Mobile Toggle) -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <button onclick="navigate('contact')" class="btn-lime text-xs sm:text-sm px-4 sm:px-5 py-2.5 rounded-full flex items-center gap-2 font-bold shadow-md">
+          <span>Get a Free Consultation</span>
+          <svg class="ic text-xs" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="lg:hidden text-white text-xl p-2.5 rounded-md hover:bg-white/10 focus:outline-none" aria-label="Toggle navigation menu">
+          <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#061025]/98 border-b border-white/10 px-6 py-5 space-y-3 text-slate-200 font-medium text-sm">
+      <button onclick="navigate('home'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">Home</button>
+      <button onclick="navigate('work'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">Our Work</button>
+      <button onclick="navigate('about'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">About Us</button>
+      <button onclick="navigate('faqs'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">FAQs</button>
+      <button onclick="navigate('blog'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">Blog</button>
+      <button onclick="navigate('contact'); toggleMobileMenu()" class="block w-full text-left py-2 hover:text-brand-lime">Contact</button>
+    </div>
+  </header>
+
+  <!-- ==================== MAIN PAGE CONTAINER (CLIENT-SIDE ROUTING) ==================== -->
+  <main class="flex-grow pt-16">
+
+    <!-- Global chase canvas fixed across whole page -->
+    <canvas id="globalChaseCanvas" aria-hidden="true"></canvas>
+
+    <!-- ==================== PAGE 1: HOME ==================== -->
+    <div id="page-home" class="page-view">
+      
+      <!-- HERO SECTION -->
+      <section id="chaseHero" class="relative hero-bg pt-24 sm:pt-32 pb-16 md:pb-24 text-white min-h-[680px] flex flex-col justify-between overflow-hidden">
+        <div class="absolute inset-0 hero-glow-overlay pointer-events-none z-[2]"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full my-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Hero Text Content -->
+            <div class="lg:col-span-8 space-y-6 max-w-3xl">
+              <!-- Pill Badge -->
+              <div class="inline-flex items-center">
+                <span class="badge-neon px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold tracking-wide text-brand-lime flex items-center gap-2">
+                  <span class="w-2 h-2 rounded-full bg-brand-lime animate-pulse"></span>
+                  Full-Stack Web Development &amp; Performance Agency
+                </span>
+              </div>
+
+              <!-- Main Heading (Single H1 for highest SEO weight) -->
+              <h1 class="text-4xl sm:text-6xl lg:text-[68px] font-extrabold tracking-tight leading-[1.08] text-white">
+                Grow Your Business <br class="hidden sm:inline" />
+                with <span class="text-brand-lime drop-shadow-[0_0_20px_rgba(182,251,30,0.35)]">Globmark</span>
+              </h1>
+
+              <!-- Subtitle -->
+              <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl font-normal">
+                Bespoke Next.js web applications, high-ROAS Meta &amp; Google ads, and search dominance for scaling brands across India and worldwide. Zero bloat, sub-second load times.
+              </p>
+
+              <!-- CTA Buttons -->
+              <div class="pt-2 flex flex-wrap items-center gap-4">
+                <a href="#services" class="btn-lime px-7 py-3.5 rounded-full text-sm font-bold flex items-center gap-2.5">
+                  <span>Explore Our Services</span>
+                  <svg class="ic text-xs" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- 4 Feature Highlights Strip -->
+        <div class="relative z-10 w-full mt-14 sm:mt-16 border-t border-b border-white/10 bg-[#040a18]/75 backdrop-blur-md">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-0 divide-y md:divide-y-0 md:divide-x divide-white/10 text-white">
+              
+              <div class="flex items-center gap-3.5 px-3 md:px-6">
+                <div class="text-brand-lime text-2xl flex-shrink-0">
+                  <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M338.8-9.9c11.9 8.6 16.3 24.2 10.9 37.8L271.3 224 416 224c13.5 0 25.5 8.4 30.1 21.1s.7 26.9-9.6 35.5l-288 240c-11.3 9.4-27.4 9.9-39.3 1.3s-16.3-24.2-10.9-37.8L176.7 288 32 288c-13.5 0-25.5-8.4-30.1-21.1s-.7-26.9 9.6-35.5l288-240c11.3-9.4 27.4-9.9 39.3-1.3z"/></svg>
+                </div>
+                <div class="text-xs sm:text-sm font-semibold tracking-wide text-slate-100 leading-snug">
+                  Lightning-Fast<br/>Web Solutions
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3.5 px-3 md:px-6 pt-4 md:pt-0">
+                <div class="text-brand-lime text-2xl flex-shrink-0">
+                  <svg class="ic" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64L0 400c0 44.2 35.8 80 80 80l400 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 416c-8.8 0-16-7.2-16-16L64 64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7 262.6 153.4c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l73.4-73.4 57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"/></svg>
+                </div>
+                <div class="text-xs sm:text-sm font-semibold tracking-wide text-slate-100 leading-snug">
+                  High-ROAS<br/>Ad Campaigns
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3.5 px-3 md:px-6 pt-4 md:pt-0">
+                <div class="text-brand-lime text-2xl flex-shrink-0">
+                  <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"/></svg>
+                </div>
+                <div class="text-xs sm:text-sm font-semibold tracking-wide text-slate-100 leading-snug">
+                  Global SEO<br/>Growth
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3.5 px-3 md:px-6 pt-4 md:pt-0">
+                <div class="text-brand-lime text-2xl flex-shrink-0">
+                  <svg class="ic" viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M268.9 85.2L152.3 214.8c-4.6 5.1-4.4 13 .5 17.9 30.5 30.5 80 30.5 110.5 0l31.8-31.8c4.2-4.2 9.5-6.5 14.9-6.9 6.8-.6 13.8 1.7 19 6.9L505.6 376 576 320 576 32 464 96 440.2 80.1C424.4 69.6 405.9 64 386.9 64l-70.4 0c-1.1 0-2.3 0-3.4 .1-16.9 .9-32.8 8.5-44.2 21.1zM116.6 182.7L223.4 64 183.8 64c-25.5 0-49.9 10.1-67.9 28.1L112 96 0 32 0 320 156.4 450.3c23 19.2 52 29.7 81.9 29.7l15.7 0-7-7c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l41 41 9 0c19.1 0 37.8-4.3 54.8-12.3L359 441c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l32 32 17.5-17.5c8.9-8.9 11.5-21.8 7.6-33.1l-137.9-136.8-14.9 14.9c-49.3 49.3-129.1 49.3-178.4 0-23-23-23.9-59.9-2.2-84z"/></svg>
+                </div>
+                <div class="text-xs sm:text-sm font-semibold tracking-wide text-slate-100 leading-snug">
+                  Built for<br/>Growing Brands
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES 6-CARD GRID -->
+      <section id="services" class="py-16 sm:py-24 bg-[#030814]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-14">
+            <div class="inline-flex items-center justify-center gap-3 mb-2">
+              <span class="w-8 h-1 bg-brand-lime rounded-full inline-block"></span>
+              <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Our Services</h2>
+              <span class="w-8 h-1 bg-brand-lime rounded-full inline-block"></span>
+            </div>
+            <p class="text-slate-300 text-sm sm:text-base font-medium">
+              End-to-end digital solutions to grow your business
+            </p>
+          </div>
+
+          <!-- Cards Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-6 sm:gap-7">
+            
+            <!-- Card 1: Custom Web Development -->
+            <div class="service-card rounded-2xl p-7 flex flex-col justify-between">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-xl bg-brand-lime/15 border border-brand-lime/30 flex items-center justify-center mb-5 text-brand-lime">
+                  <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                    <path d="M8 8l-2 2 2 2"/>
+                    <path d="M16 8l2 2-2 2"/>
+                    <line x1="13" y1="7" x2="11" y2="13"/>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2 leading-snug">Web Development<br/>&amp; Website Design</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                  Custom Next.js and React websites, designed to look sharp and turn visitors into leads.
+                </p>
+              </div>
+              <div class="text-center pt-3 border-t border-white/10">
+                <button onclick="openServiceDetail('web')" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-lime hover:text-white">
+                  <span>Learn More</span>
+                  <svg class="ic text-[11px]" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 2: Performance Digital Marketing -->
+            <div class="service-card rounded-2xl p-7 flex flex-col justify-between">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-xl bg-brand-lime/15 border border-brand-lime/30 flex items-center justify-center mb-5 text-brand-lime">
+                  <svg class="w-9 h-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 3v18h18"/>
+                    <path d="M7 15l4-5 4 4 6-7"/>
+                    <path d="M16 7h5v5"/>
+                    <rect x="6" y="15" width="2" height="3" fill="currentColor"/>
+                    <rect x="10" y="11" width="2" height="7" fill="currentColor"/>
+                    <rect x="14" y="14" width="2" height="4" fill="currentColor"/>
+                    <rect x="18" y="8" width="2" height="10" fill="currentColor"/>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2 leading-snug">Performance<br/>Digital Marketing</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                  High-ROAS Meta and Google ad campaigns optimized for verified conversion.
+                </p>
+              </div>
+              <div class="text-center pt-3 border-t border-white/10">
+                <button onclick="openServiceDetail('marketing')" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-lime hover:text-white">
+                  <span>Learn More</span>
+                  <svg class="ic text-[11px]" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 3: Search Engine Optimization & Global SEO -->
+            <div class="service-card rounded-2xl p-7 flex flex-col justify-between">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-xl bg-amber-50/70 flex items-center justify-center mb-5">
+                  <svg class="w-10 h-10" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#EA4335"/>
+                    <circle cx="12" cy="9" r="3" fill="#ffffff"/>
+                    <circle cx="12" cy="9" r="1.8" fill="#4285F4"/>
+                  </svg>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2 leading-snug">Google Business Profile<br/>&amp; Global SEO</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                  Dominate local, national, and global search visibility with verified intent.
+                </p>
+              </div>
+              <div class="text-center pt-3 border-t border-white/10">
+                <button onclick="openServiceDetail('seo')" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-lime hover:text-white">
+                  <span>Learn More</span>
+                  <svg class="ic text-[11px]" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 4: YouTube Marketing -->
+            <div class="service-card rounded-2xl p-7 flex flex-col justify-between">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-xl bg-red-50 flex items-center justify-center mb-5 text-[#ef4444]">
+                  <div class="w-10 h-7 bg-[#ff0000] rounded-xl flex items-center justify-center shadow-sm">
+                    <svg class="w-3.5 h-3.5 text-white ml-0.5" viewBox="0 0 24 24" fill="currentColor">
+                      <polygon points="5 3 19 12 5 21 5 3"/>
+                    </svg>
+                  </div>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2 leading-snug">YouTube Marketing</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                  Grow your audience with high-retention video strategies &amp; YouTube Ads.
+                </p>
+              </div>
+              <div class="text-center pt-3 border-t border-white/10">
+                <button onclick="openServiceDetail('youtube')" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-lime hover:text-white">
+                  <span>Learn More</span>
+                  <svg class="ic text-[11px]" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 5: Social Media Ads -->
+            <div class="service-card rounded-2xl p-7 flex flex-col justify-between">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-xl bg-blue-50/60 flex items-center justify-center gap-1.5 mb-5">
+                  <span class="w-6 h-6 rounded-full bg-[#1877F2] text-white flex items-center justify-center text-[11px]">
+                    <svg class="ic" viewBox="0 0 320 512" fill="currentColor" aria-hidden="true"><path d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"/></svg>
+                  </span>
+                  <span class="w-6 h-6 rounded-md bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white flex items-center justify-center text-[11px]">
+                    <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                  </span>
+                  <span class="w-6 h-6 rounded-md bg-[#0A66C2] text-white flex items-center justify-center text-[11px]">
+                    <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></svg>
+                  </span>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2 leading-snug">Social Media Ads</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                  Engage, convert, and scale your brand on Instagram, Facebook &amp; LinkedIn.
+                </p>
+              </div>
+              <div class="text-center pt-3 border-t border-white/10">
+                <button onclick="openServiceDetail('social')" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-lime hover:text-white">
+                  <span>Learn More</span>
+                  <svg class="ic text-[11px]" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 6: AI Automation for Business -->
+            <div class="service-card rounded-2xl p-7 flex flex-col justify-between">
+              <div class="flex flex-col items-center text-center">
+                <div class="w-16 h-16 rounded-xl bg-brand-lime/15 border border-brand-lime/30 flex items-center justify-center mb-5 text-brand-lime">
+                  <svg class="ic text-3xl" viewBox="0 0 640 512" fill="currentColor" aria-hidden="true"><path d="M352 0c0-17.7-14.3-32-32-32S288-17.7 288 0l0 64-96 0c-53 0-96 43-96 96l0 224c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-224c0-53-43-96-96-96l-96 0 0-64zM160 368c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zm120 0c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zm120 0c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zM224 176a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm144 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM64 224c0-17.7-14.3-32-32-32S0 206.3 0 224l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96zm544-32c-17.7 0-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32z"/></svg>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2 leading-snug">AI Automation<br/>for Business</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-6 font-normal">
+                  AI chatbots and automated workflows that handle leads, follow-ups and routine tasks for your team.
+                </p>
+              </div>
+              <div class="text-center pt-3 border-t border-white/10">
+                <button onclick="openServiceDetail('ai')" class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-lime hover:text-white">
+                  <span>Learn More</span>
+                  <svg class="ic text-[11px]" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- OUR APPROACH & METRICS SECTION -->
+      <section class="py-10 pb-16 bg-[#f8fafc]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Left: Our Approach Banner -->
+            <div class="lg:col-span-12 approach-card rounded-3xl p-7 sm:p-9 text-white relative overflow-hidden flex flex-col justify-between min-h-[270px]">
+              <div class="relative z-10 max-w-sm space-y-2">
+                <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Our Approach</h3>
+                <h4 class="text-brand-lime text-base sm:text-lg font-bold">
+                  Your Growth, Our Commitment.
+                </h4>
+                <p class="text-slate-300 text-xs sm:text-sm leading-relaxed pt-1 font-normal">
+                  We combine engineering precision, creative storytelling, and automated ad intelligence to deliver measurable results.
+                </p>
+                <div class="pt-4">
+                  <button onclick="navigate('about')" class="btn-lime text-xs font-bold px-5 py-2.5 rounded-full inline-flex items-center gap-2">
+                    <span>About Globmark</span>
+                    <svg class="ic text-[11px]" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Glowing Ascending 3D Bars -->
+              <div class="absolute right-0 bottom-0 top-0 w-1/2 flex items-end justify-end pointer-events-none pr-3 pb-2 opacity-95">
+                <div class="relative w-full h-full flex items-end justify-end">
+                  <svg class="absolute inset-0 w-full h-full" viewBox="0 0 260 200" fill="none">
+                    <path d="M 40 180 Q 120 120 220 50" stroke="#38bdf8" stroke-width="4.5" stroke-linecap="round" filter="drop-shadow(0 0 8px #38bdf8)"/>
+                    <polygon points="228,40 210,50 226,62" fill="#38bdf8" filter="drop-shadow(0 0 6px #38bdf8)"/>
+                  </svg>
+                  <div class="flex items-end gap-2.5 z-10 mr-4 mb-2">
+                    <div class="w-6 sm:w-7 h-12 bg-gradient-to-t from-blue-700 to-sky-400 rounded-t-sm chart-bar-glow"></div>
+                    <div class="w-6 sm:w-7 h-18 bg-gradient-to-t from-blue-700 to-sky-400 rounded-t-sm chart-bar-glow" style="height: 70px;"></div>
+                    <div class="w-6 sm:w-7 h-24 bg-gradient-to-t from-blue-700 to-sky-400 rounded-t-sm chart-bar-glow" style="height: 95px;"></div>
+                    <div class="w-6 sm:w-7 h-32 bg-gradient-to-t from-blue-700 to-sky-400 rounded-t-sm chart-bar-glow" style="height: 125px;"></div>
+                    <div class="w-6 sm:w-7 h-40 bg-gradient-to-t from-blue-700 to-sky-300 rounded-t-sm chart-bar-glow" style="height: 155px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: 4 Metrics Grid -->
+            <div class="hidden lg:col-span-6 bg-white rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-sm"><!-- HIDDEN until real, provable stats are available -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
+                <div class="flex flex-col items-center text-center px-2">
+                  <div class="text-[#0284c7] text-2xl mb-2"><svg class="ic" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M128 320L24.5 320c-24.9 0-40.2-27.1-27.4-48.5L50 183.3C58.7 168.8 74.3 160 91.2 160l95 0c76.1-128.9 189.6-135.4 265.5-124.3 12.8 1.9 22.8 11.9 24.6 24.6 11.1 75.9 4.6 189.4-124.3 265.5l0 95c0 16.9-8.8 32.5-23.3 41.2l-88.2 52.9c-21.3 12.8-48.5-2.6-48.5-27.4L192 384c0-35.3-28.7-64-64-64l-.1 0zM400 160a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z"/></svg></div>
+                  <div class="text-2xl sm:text-3xl font-extrabold text-[#091530] tracking-tight">TODO</div>
+                  <div class="text-[11px] sm:text-xs font-semibold text-slate-500 mt-1">Client Satisfaction</div>
+                </div>
+
+                <div class="flex flex-col items-center text-center px-2 pt-4 sm:pt-0">
+                  <div class="text-[#0284c7] text-2xl mb-2"><svg class="ic" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M32 32c17.7 0 32 14.3 32 32l0 336c0 8.8 7.2 16 16 16l400 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L80 480c-44.2 0-80-35.8-80-80L0 64C0 46.3 14.3 32 32 32zM144 224c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32zm144-64l0 160c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-160c0-17.7 14.3-32 32-32s32 14.3 32 32zm80 32c17.7 0 32 14.3 32 32l0 96c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-96c0-17.7 14.3-32 32-32zM512 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-224c0-17.7 14.3-32 32-32s32 14.3 32 32z"/></svg></div>
+                  <div class="text-2xl sm:text-3xl font-extrabold text-[#091530] tracking-tight">TODO</div>
+                  <div class="text-[11px] sm:text-xs font-semibold text-slate-500 mt-1">Average ROAS<br/><span class="text-[11px] text-slate-400">(for ad campaigns)</span></div>
+                </div>
+
+                <div class="flex flex-col items-center text-center px-2 pt-4 sm:pt-0">
+                  <div class="text-[#0284c7] text-2xl mb-2"><svg class="ic" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M351.9 280l-190.9 0c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zM160.9 232l190.9 0C349 167.5 334.7 108.1 314.4 64.6 303 40.2 290.7 22.8 279.3 12.2 268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4zm-48 0C116.4 146.4 138.5 66.9 170.8 14.7 78.7 47.3 10.9 131.2 1.5 232l111.4 0zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3L1.5 280zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3l-111.4 0zm111.4-48C501.9 131.2 434.1 47.3 342 14.7 374.3 66.9 396.4 146.4 399.9 232l111.4 0z"/></svg></div>
+                  <div class="text-2xl sm:text-3xl font-extrabold text-[#091530] tracking-tight">TODO</div>
+                  <div class="text-[11px] sm:text-xs font-semibold text-slate-500 mt-1">Projects Delivered</div>
+                </div>
+
+                <div class="flex flex-col items-center text-center px-2 pt-4 sm:pt-0">
+                  <div class="text-[#0284c7] text-2xl mb-2"><svg class="ic" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M144.3 0l224 0c26.5 0 48.1 21.8 47.1 48.2-.2 5.3-.4 10.6-.7 15.8l49.6 0c26.1 0 49.1 21.6 47.1 49.8-7.5 103.7-60.5 160.7-118 190.5-15.8 8.2-31.9 14.3-47.2 18.8-20.2 28.6-41.2 43.7-57.9 51.8l0 73.1 64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l64 0 0-73.1c-16-7.7-35.9-22-55.3-48.3-18.4-4.8-38.4-12.1-57.9-23.1-54.1-30.3-102.9-87.4-109.9-189.9-1.9-28.1 21-49.7 47.1-49.7l49.6 0c-.3-5.2-.5-10.4-.7-15.8-1-26.5 20.6-48.2 47.1-48.2zM101.5 112l-52.4 0c6.2 84.7 45.1 127.1 85.2 149.6-14.4-37.3-26.3-86-32.8-149.6zM380 256.8c40.5-23.8 77.1-66.1 83.3-144.8L411 112c-6.2 60.9-17.4 108.2-31 144.8z"/></svg></div>
+                  <div class="text-2xl sm:text-3xl font-extrabold text-[#091530] tracking-tight">TODO</div>
+                  <div class="text-[11px] sm:text-xs font-semibold text-slate-500 mt-1">Growing Brands</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL MINI SECTION -->
+      <section class="py-12 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-8 bg-[#040c1e] text-white p-8 sm:p-10 rounded-3xl">
+            <div class="space-y-3 max-w-xl">
+              <span class="text-brand-lime text-xs font-bold uppercase tracking-wider">Ready to Scale Your Brand?</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold">Stop guessing your marketing spend. Partner with a results-first global agency.</h3>
+              <p class="text-slate-400 text-sm">Get a free strategy audit and a clear plan to grow your revenue, search rankings and web conversion. Results vary and are not guaranteed.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-3">
+              <button onclick="navigate('contact')" class="btn-lime px-6 py-3 rounded-full text-sm font-bold">Book Free Strategy Call</button>
+              <button onclick="navigate('work')" class="btn-glass px-6 py-3 rounded-full text-sm font-semibold">View Case Studies</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ==================== PAGE 2: OUR WORK (CASE STUDIES) ==================== -->
+    <div id="page-work" class="page-view hidden">
+      <div class="bg-[#030814] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10">
+        <div class="max-w-7xl mx-auto text-center">
+          <span class="text-brand-lime text-xs font-bold uppercase tracking-widest badge-neon px-4 py-1.5 rounded-full inline-block mb-3">Our Work</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Our Work &amp; Case Studies</h2>
+          <p class="text-slate-300 mt-3 max-w-2xl mx-auto text-sm sm:text-base">Sample projects shown for illustration. Real client case studies will be added soon.</p>
+          
+          <!-- Category Filter Tabs -->
+          <div class="flex flex-wrap items-center justify-center gap-2 mt-8" id="portfolioFilter">
+            <button onclick="filterPortfolio('all')" class="portfolio-tab-btn px-5 py-2 rounded-full text-xs sm:text-sm font-bold bg-brand-lime text-black transition-all" data-cat="all">All Projects</button>
+            <button onclick="filterPortfolio('web')" class="portfolio-tab-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white hover:bg-white/20 transition-all" data-cat="web">Web &amp; Next.js</button>
+            <button onclick="filterPortfolio('ads')" class="portfolio-tab-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white hover:bg-white/20 transition-all" data-cat="ads">Paid Ads &amp; ROAS</button>
+            <button onclick="filterPortfolio('seo')" class="portfolio-tab-btn px-5 py-2 rounded-full text-xs sm:text-sm font-medium bg-white/10 text-white hover:bg-white/20 transition-all" data-cat="seo">Organic &amp; Global SEO</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolioGrid">
+          
+          <!-- Project 1 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="web">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="MathsWaala EdTech Platform Developed by Globmark" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">Next.js &bull; Supabase</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">MathsWaala EdTech Platform</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Custom Next.js Portal &bull; Live Batch Management</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Engineered a zero-lag student assessment portal with integrated payment gateways and automated video lesson streaming.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Page Speed</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Monthly Users</span>
+                    <span class="text-blue-600 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('mathswaala')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="ads">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Break Shot Waffles Paid Social Campaign" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">Meta Ads &bull; Hyperlocal</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">Break Shot Waffles &amp; Cafe</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Hyperlocal Performance Campaign &bull; Scaling Chain</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Targeted geo-fenced Instagram and Facebook video campaigns driving in-store foot traffic and online orders.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Store Walk-ins</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Ad Spend</span>
+                    <span class="text-blue-600 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('waffles')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="seo">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Vedika Vedanshi SEO Growth" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">Organic SEO &bull; Google Maps</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">Vedika Vedanshi Enterprises</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Google Business Profile Domination &bull; Pan-India B2B</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Full citation audit, Geo-tagged image optimization and review automation capturing high-intent B2B inquiries across India.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Direct Phone Inquiries</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Google Search Views</span>
+                    <span class="text-blue-600 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('vedika')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="web">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Postal Knowledge Portal by Globmark" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">React &bull; Python Portal</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">Postal Knowledge Hub</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Resource &amp; Regulatory Portal &bull; Pan India</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  High-capacity competitive exam preparation repository built for fast, reliable search and browsing.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Google Core Web Vitals</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Search Organic</span>
+                    <span class="text-blue-600 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('postal')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="ads">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" alt="B2B Manufacturing Lead Engine" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">Google Ads &bull; High Intent</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">Apex Polychem Pvt Ltd</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Google Search Ads &bull; Industrial Polymers</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Eliminated negative keywords and built high-converting landing pages focused on lowering Cost Per Qualified Lead.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">CPL Reduction</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Monthly Deal Value</span>
+                    <span class="text-blue-600 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('apex')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="portfolio-card bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm flex flex-col justify-between" data-category="seo">
+            <div>
+              <div class="h-52 bg-slate-900 relative overflow-hidden group">
+                <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Healthcare SEO Domination" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-90" loading="lazy">
+                <span class="absolute top-4 left-4 bg-[#030814]/90 text-brand-lime text-[11px] font-bold px-3 py-1 rounded-full border border-brand-lime/30">Local &amp; Global SEO &bull; Healthcare</span>
+                <span class="hidden absolute bottom-4 right-4 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md shadow-md">Result: TODO</span>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-extrabold text-[#081329] mb-1">Dr. Sheth's Smile Studio</h3>
+                <p class="text-xs text-brand-blueAccent font-semibold mb-3">Medical Clinic SEO &bull; Multi-Location Brand</p>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+                  Boosted Google Map directions requests and automated WhatsApp appointment confirmations for high-ticket dental procedures.
+                </p>
+                <div class="hidden items-center gap-4 text-xs font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">New Patients / mo</span>
+                    <span class="text-emerald-600 font-extrabold">TODO</span>
+                  </div>
+                  <div class="border-l border-slate-200 pl-4">
+                    <span class="text-slate-400 block text-[11px]">Google Star Rating</span>
+                    <span class="text-amber-500 font-extrabold">TODO</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="openCaseStudyModal('smile')" class="w-full btn-lime text-center py-2.5 rounded-xl text-xs font-bold">
+                View Full Case Study
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== PAGE 3: ABOUT US ==================== -->
+    <div id="page-about" class="page-view hidden">
+      <!-- About Hero -->
+      <div class="bg-[#030814] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10">
+        <div class="max-w-7xl mx-auto text-center">
+          <span class="text-brand-lime text-xs font-bold uppercase tracking-widest badge-neon px-4 py-1.5 rounded-full inline-block mb-3">Our Identity</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Engineering Meets High-ROAS Performance</h2>
+          <p class="text-slate-300 mt-4 max-w-2xl mx-auto text-sm sm:text-base">
+            We are Globmark. We bridge custom software craftsmanship with aggressive customer acquisition strategies for ambitious companies globally.
+          </p>
+        </div>
+      </div>
+
+      <!-- Story & Philosophy -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 space-y-6">
+            <h3 class="text-2xl sm:text-4xl font-extrabold text-[#081329]">
+              Why Globmark Was Built: <br/>
+              <span class="text-brand-lime bg-[#030814] px-2 py-0.5 rounded">Zero Bloat, Verifiable ROI</span>
+            </h3>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Most digital agencies sell templates that load slowly and run ad budgets with vanity metrics. We founded Globmark with an engineer's mindset: every line of code must be performant, and every single rupee or dollar spent on advertising must be trackable directly to your cash flow.
+            </p>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+              Whether you run a high-traffic e-commerce portal, an educational academy, or an international SaaS company, our team ensures your brand commands attention and dominates the top of Google &amp; social feeds.
+            </p>
+            
+            <div class="grid grid-cols-2 gap-4 pt-2">
+              <div class="p-4 bg-white rounded-xl border border-slate-200">
+                <svg class="ic text-brand-lime text-xl mb-1 bg-black p-2 rounded-lg" viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 150.6 182.6c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+                <h4 class="font-bold text-sm text-[#091530]">Modern Codebase</h4>
+                <p class="text-xs text-slate-500 mt-1">Next.js 14, Tailwind, and React for fast Google Lighthouse performance.</p>
+              </div>
+              <div class="p-4 bg-white rounded-xl border border-slate-200">
+                <svg class="ic text-brand-lime text-xl mb-1 bg-black p-2 rounded-lg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M448 256a192 192 0 1 0 -384 0 192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                <h4 class="font-bold text-sm text-[#091530]">Real Attribution</h4>
+                <p class="text-xs text-slate-500 mt-1">Advanced Meta Pixel, Google CAPI, and GA4 custom events tracking.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6">
+            <div class="relative bg-gradient-to-tr from-[#061025] to-[#0f2048] p-8 sm:p-10 rounded-3xl text-white shadow-xl">
+              <div class="text-brand-lime text-2xl font-extrabold tracking-tight mb-2">Build &bull; Grow &bull; Scale</div>
+              <h4 class="text-2xl font-bold mb-4">Our Core Operational Principles</h4>
+              <ul class="space-y-4 text-sm text-slate-300">
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="ic text-xs" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"/></svg></span>
+                  <span><strong>Speed Is a Feature:</strong> Slow sites kill conversions. We build ultra-lean Next.js architectures that load in under 600ms.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="ic text-xs" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"/></svg></span>
+                  <span><strong>No Empty Clicks:</strong> We ruthlessly filter bot clicks and poor-intent keywords, ensuring maximum ROAS on Meta and Google.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-6 h-6 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center flex-shrink-0 mt-0.5"><svg class="ic text-xs" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"/></svg></span>
+                  <span><strong>Global &amp; Local Reach:</strong> Engineered to rank at the top of organic search algorithms across India and worldwide markets.</span>
+                </li>
+              </ul>
+              
+              <div class="mt-8 pt-6 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+                <span>Enterprise Grade Engineering</span>
+                <span class="text-brand-lime font-bold">In-house Execution</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tech & Marketing Stack -->
+        <div class="mt-20">
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-[#081329]">Our Engineering &amp; Marketing Stack</h3>
+            <p class="text-slate-600 text-sm mt-2">The world-class technologies and ad ecosystems we utilize daily</p>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-4">
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 flex flex-col items-center justify-center text-center shadow-sm">
+              <svg class="ic text-3xl text-sky-500 mb-2" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1 .9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2 .6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9-53.4 18.5-91.7 47.7-91.7 77.9 0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zM136.9 187.2c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zM115.7 320.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6 .4 19.5 .6 29.5 .6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8 .9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zM256 301.8a45.8 45.8 0 1 0 0-91.6 45.8 45.8 0 1 0 0 91.6z"/></svg>
+              <span class="font-bold text-xs text-slate-800">React.js</span>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 flex flex-col items-center justify-center text-center shadow-sm">
+              <svg class="ic text-3xl text-black mb-2" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M224.3-2.5c19.8-11.4 44.2-11.4 64 0L464.2 99c19.8 11.4 32 32.6 32 55.4l0 203c0 22.9-12.2 44-32 55.4L288.3 514.5c-19.8 11.4-44.2 11.4-64 0L48.5 413c-19.8-11.4-32-32.6-32-55.4l0-203c0-22.9 12.2-44 32-55.4L224.3-2.5zm207.8 360l0-166.1-143.8 83 0 166.1 143.8-83z"/></svg>
+              <span class="font-bold text-xs text-slate-800">Next.js 14</span>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 flex flex-col items-center justify-center text-center shadow-sm">
+              <svg class="ic text-3xl text-red-500 mb-2" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M500 261.8C500 403.3 403.1 504 260 504 122.8 504 12 393.2 12 256S122.8 8 260 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9c-88.3-85.2-252.5-21.2-252.5 118.2 0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9l-140.8 0 0-85.3 236.1 0c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+              <span class="font-bold text-xs text-slate-800">Google Ads</span>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 flex flex-col items-center justify-center text-center shadow-sm">
+              <svg class="ic text-3xl text-blue-600 mb-2" viewBox="0 0 640 512" fill="currentColor" aria-hidden="true"><path d="M640 317.9c0 91.3-39.4 148.5-110.3 148.5-62.6 0-95.8-34.6-156.9-136.6l-31.4-52.6c-8.3-12.5-14.5-24.2-21.2-35-20.1 33.8-47.1 83-47.1 83-67 116.6-104.6 141.2-156.9 141.2-72.8 0-116.2-57.3-116.2-145.9 0-143 79.8-278.1 183.9-278.1 50.2 0 93.8 24.7 144.8 89.5 37.1-50.1 78.1-89.5 130.6-89.5 99.1 0 180.7 125.7 180.7 275.5zM287.4 192.2c-42.9-62.1-70.9-80.5-104.4-80.5-61.9 0-113.8 106.1-113.8 210 0 48.5 18.5 75.7 49.6 75.7 30.2 0 49-19 103.2-103.8 0 0 24.7-39.1 65.4-101.4zM531.2 397.4c32.2 0 46.9-27.5 46.9-74.9 0-124.2-54.3-225.4-123.2-225.4-33.2 0-61.1 25.9-94.9 78 9.4 13.8 19.1 29 29.3 45.4l37.5 62.4c58.7 94.1 73.5 114.5 104.4 114.5z"/></svg>
+              <span class="font-bold text-xs text-slate-800">Meta CAPI</span>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 flex flex-col items-center justify-center text-center shadow-sm">
+              <svg class="ic text-3xl text-yellow-600 mb-2" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2l-40.1 0 0 47.4c0 36.8-31.2 67.8-66.8 67.8l-106.8 0c-29.2 0-53.4 25-53.4 54.3l0 101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3l0-40.7-106.7 0 0-13.6 160.2 0c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7zM167.8 248.1l106.8 0c29.7 0 53.4-24.5 53.4-54.3l0-101.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6l0 40.7 106.9 0 0 13.6-147 0c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2l36.7 0 0-48.8c0-35.3 30.5-66.4 66.8-66.4zM161.2 64.7a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8z"/></svg>
+              <span class="font-bold text-xs text-slate-800">Python / APIs</span>
+            </div>
+            <div class="bg-white p-5 rounded-2xl border border-slate-200 flex flex-col items-center justify-center text-center shadow-sm">
+              <svg class="ic text-3xl text-emerald-600 mb-2" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zm-312 8l0 64c0 13.3 10.7 24 24 24s24-10.7 24-24l0-64c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80-96l0 160c0 13.3 10.7 24 24 24s24-10.7 24-24l0-160c0-13.3-10.7-24-24-24s-24 10.7-24 24zm80 64l0 96c0 13.3 10.7 24 24 24s24-10.7 24-24l0-96c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+              <span class="font-bold text-xs text-slate-800">Global SEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== PAGE 4: FAQS ==================== -->
+    <div id="page-faqs" class="page-view hidden">
+      <!-- FAQs Header -->
+      <div class="bg-[#030814] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10">
+        <div class="max-w-4xl mx-auto text-center">
+          <span class="text-brand-lime text-xs font-bold uppercase tracking-widest badge-neon px-4 py-1.5 rounded-full inline-block mb-3">Clear Answers</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Frequently Asked Questions</h2>
+          <p class="text-slate-300 mt-3 text-sm sm:text-base">Everything you need to know about our web engineering, advertising strategy, timelines, and pricing.</p>
+          
+          <!-- Live FAQ Search -->
+          <div class="mt-8 max-w-xl mx-auto relative">
+            <svg class="ic absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            <input type="text" id="faqSearchInput" onkeyup="searchFAQs()" placeholder="Search questions (e.g., SEO, pricing, Next.js, ad budget)..." class="w-full pl-12 pr-4 py-3.5 rounded-full bg-white/10 border border-white/20 text-white placeholder-slate-400 focus:outline-none focus:border-brand-lime text-sm" aria-label="Search FAQs">
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Accordions Container -->
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <div class="space-y-4" id="faqAccordionContainer">
+          
+          <!-- Item 1 -->
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between font-bold text-[#081329] text-base sm:text-lg hover:text-blue-600 transition-colors">
+              <span>Why should we build our website with Next.js instead of WordPress?</span>
+              <svg class="ic text-xs text-slate-400 transition-transform duration-200" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </button>
+            <div class="faq-answer px-5 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 hidden pt-3">
+              WordPress sites are often burdened with bloated themes, excessive plugins, and frequent security vulnerabilities that slow down page loads. Globmark builds bespoke Next.js web applications that compile into lightweight, lightning-fast static and server-rendered assets. This supports fast load times and a smooth mobile experience, which can help conversion rates from paid ad traffic. Results vary by project.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between font-bold text-[#081329] text-base sm:text-lg hover:text-blue-600 transition-colors">
+              <span>What is a good starting monthly budget for Meta and Google Ads?</span>
+              <svg class="ic text-xs text-slate-400 transition-transform duration-200" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </button>
+            <div class="faq-answer px-5 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 hidden pt-3">
+              For local service businesses, we recommend starting with a media spend of ₹25,000 to ₹45,000 per month ($350 - $600 USD). For regional e-commerce, national scaling, and B2B lead generation, ₹60,000+ per month ($800+ USD) allows sufficient budget for algorithmic learning and multi-creative testing. We work to keep your Cost Per Lead (CPL) as low as possible through regular negative-keyword audits and creative refreshes. Results vary and are not guaranteed.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between font-bold text-[#081329] text-base sm:text-lg hover:text-blue-600 transition-colors">
+              <span>How long does it take to rank on Google search results?</span>
+              <svg class="ic text-xs text-slate-400 transition-transform duration-200" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </button>
+            <div class="faq-answer px-5 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 hidden pt-3">
+              For local map listings and branded keywords, rankings typically appear within 30 to 45 days. For national and international high-volume search phrases, technical SEO audits, schema injection, and high-authority backlinks generally build solid top-page momentum within 60 to 90 days.
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between font-bold text-[#081329] text-base sm:text-lg hover:text-blue-600 transition-colors">
+              <span>Do you provide ongoing maintenance and performance reporting?</span>
+              <svg class="ic text-xs text-slate-400 transition-transform duration-200" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </button>
+            <div class="faq-answer px-5 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 hidden pt-3">
+              Yes. Every client receives a custom real-time Looker Studio dashboard showing exact cost per conversion, qualified leads, website traffic, and server health. We hold bi-weekly strategy reviews and provide 24/7 technical monitoring.
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+            <button onclick="toggleFaq(this)" class="w-full p-5 text-left flex items-center justify-between font-bold text-[#081329] text-base sm:text-lg hover:text-blue-600 transition-colors">
+              <span>Can you revamp our existing website without losing our current SEO rankings?</span>
+              <svg class="ic text-xs text-slate-400 transition-transform duration-200" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
+            </button>
+            <div class="faq-answer px-5 pb-5 text-slate-600 text-sm leading-relaxed border-t border-slate-100 hidden pt-3">
+              Absolutely. We perform a complete URL inventory and setup 1-to-1 301 redirects, preserving all accumulated domain authority and search rankings while upgrading your user interface and page speed.
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Custom Question Box -->
+        <div class="mt-12 bg-[#040c1e] text-white p-8 rounded-2xl border border-white/10 text-center">
+          <h3 class="text-xl font-bold mb-2">Have a question not listed here?</h3>
+          <p class="text-slate-400 text-xs sm:text-sm mb-5">Talk directly with our technical director or growth lead.</p>
+          <button onclick="navigate('contact')" class="btn-lime px-6 py-2.5 rounded-full text-xs font-bold">Ask Us Directly</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==================== PAGE 5: BLOG / KNOWLEDGE HUB ==================== -->
+    <div id="page-blog" class="page-view hidden">
+      <!-- Blog Header -->
+      <div class="bg-[#030814] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10">
+        <div class="max-w-7xl mx-auto text-center">
+          <span class="text-brand-lime text-xs font-bold uppercase tracking-widest badge-neon px-4 py-1.5 rounded-full inline-block mb-3">Knowledge Base</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Growth, Code &amp; Conversion Insights</h2>
+          <p class="text-slate-300 mt-3 max-w-2xl mx-auto text-sm sm:text-base">Actionable frameworks on Next.js performance, Meta ad algorithms, and search dominance worldwide.</p>
+        </div>
+      </div>
+
+      <!-- Blog Grid -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- Featured Article -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm mb-12 grid grid-cols-1 lg:grid-cols-12">
+          <div class="lg:col-span-7 h-64 sm:h-80 lg:h-auto bg-slate-900 relative">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80" alt="Google Search Ranking Strategy Blueprint" class="w-full h-full object-cover" loading="lazy">
+            <span class="absolute top-4 left-4 bg-brand-lime text-black font-extrabold text-[11px] px-3 py-1 rounded-full uppercase tracking-wider">Featured Guide</span>
+          </div>
+          <div class="lg:col-span-5 p-8 sm:p-10 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 text-xs text-slate-400 font-semibold mb-3">
+                <span>Technical SEO</span> &bull; <span>7 min read</span> &bull; <span>Global Strategy</span>
+              </div>
+              <h3 class="text-2xl font-extrabold text-[#081329] mb-3 leading-snug">
+                A Practical SEO Blueprint to Improve Your Google Rankings
+              </h3>
+              <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">
+                A step-by-step checklist for improving your visibility in organic search results without relying on paid ads.
+              </p>
+            </div>
+            <button onclick="readArticle('seo-guide')" class="btn-lime w-full text-center py-2.5 rounded-xl text-xs font-bold">
+              Read Complete Guide &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- 3 Articles Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          <!-- Article 1 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80" alt="Next.js Conversion Impact" class="w-full h-48 object-cover" loading="lazy">
+              <div class="p-6">
+                <div class="text-[11px] font-bold text-blue-600 mb-2">WEB ENGINEERING</div>
+                <h4 class="text-lg font-bold text-[#081329] mb-2 leading-snug">Why Page Speed Matters for Your Meta Ad Results</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">
+                  How lighter pages and faster loading can help reduce mobile bounce rates.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="readArticle('speed-roas')" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                <span>Read Article</span> <svg class="ic text-[11px]" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1533750516457-a7f992034fec?auto=format&fit=crop&w=600&q=80" alt="Meta Ad Fatigue" class="w-full h-48 object-cover" loading="lazy">
+              <div class="p-6">
+                <div class="text-[11px] font-bold text-emerald-600 mb-2">PAID ADVERTISING</div>
+                <h4 class="text-lg font-bold text-[#081329] mb-2 leading-snug">Fixing Creative Ad Fatigue on Instagram &amp; Facebook</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">
+                  A modular creative testing approach that helps keep your Cost Per Lead steadier as you scale ad spend.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="readArticle('ad-fatigue')" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                <span>Read Article</span> <svg class="ic text-[11px]" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm flex flex-col justify-between">
+            <div>
+              <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=600&q=80" alt="Website Design and Positioning" class="w-full h-48 object-cover" loading="lazy">
+              <div class="p-6">
+                <div class="text-[11px] font-bold text-purple-600 mb-2">WEB DESIGN</div>
+                <h4 class="text-lg font-bold text-[#081329] mb-2 leading-snug">Website Design That Builds Trust and Supports Premium Pricing</h4>
+                <p class="text-slate-500 text-xs leading-relaxed">
+                  How polished typography, consistent design systems and a fast website elevate customer perception.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <button onclick="readArticle('branding-pricing')" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                <span>Read Article</span> <svg class="ic text-[11px]" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ==================== PAGE 6: CONTACT & CONSULTATION BOOKER ==================== -->
+    <div id="page-contact" class="page-view hidden">
+      <!-- Contact Hero -->
+      <div class="bg-[#030814] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10">
+        <div class="max-w-7xl mx-auto text-center">
+          <span class="text-brand-lime text-xs font-bold uppercase tracking-widest badge-neon px-4 py-1.5 rounded-full inline-block mb-3">Direct Collaboration</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Let's Grow Your Business Together</h2>
+          <p class="text-slate-300 mt-3 max-w-2xl mx-auto text-sm sm:text-base">Book a free digital audit &amp; strategy session. We analyze your website speed, SEO profile, and ad profitability.</p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        
+        <!-- Live ROAS & Budget Calculator Widget -->
+        <div class="bg-gradient-to-br from-[#061025] to-[#0d1f47] text-white p-7 sm:p-10 rounded-3xl border border-white/10 shadow-xl mb-14">
+          <div class="max-w-3xl mb-8">
+            <span class="text-brand-lime text-xs font-bold tracking-widest uppercase">Interactive Simulator</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight mt-1">Estimate Your Growth &amp; Projected ROAS</h3>
+            <p class="text-slate-300 text-xs sm:text-sm mt-1">Slide your projected monthly ad spend to preview estimated reach, leads, and revenue potential based on our real benchmark data.</p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-5">
+              <div>
+                <div class="flex justify-between text-sm font-semibold mb-2">
+                  <span>Monthly Ad Spend (INR)</span>
+                  <span id="spendDisplay" class="text-brand-lime text-lg font-bold">₹ 50,000</span>
+                </div>
+                <input type="range" id="spendSlider" min="15000" max="500000" step="5000" value="50000" oninput="updateCalculator(this.value)" class="w-full h-2.5 bg-slate-700 rounded-lg appearance-none cursor-pointer" aria-label="Ad Spend Slider">
+                <div class="flex justify-between text-[11px] text-slate-400 mt-1">
+                  <span>₹15,000 (Local Starter)</span>
+                  <span>₹2,50,000</span>
+                  <span>₹5,00,000+ (Aggressive Scale)</span>
+                </div>
+              </div>
+
+              <div class="p-4 bg-white/5 rounded-xl border border-white/10 text-xs text-slate-300 flex items-center gap-3">
+                <svg class="ic text-brand-lime text-xl" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M64 0C28.7 0 0 28.7 0 64L0 448c0 35.3 28.7 64 64 64l256 0c35.3 0 64-28.7 64-64l0-384c0-35.3-28.7-64-64-64L64 0zM96 64l192 0c17.7 0 32 14.3 32 32l0 32c0 17.7-14.3 32-32 32L96 160c-17.7 0-32-14.3-32-32l0-32c0-17.7 14.3-32 32-32zm16 168a24 24 0 1 1 -48 0 24 24 0 1 1 48 0zm80 24a24 24 0 1 1 0-48 24 24 0 1 1 0 48zm128-24a24 24 0 1 1 -48 0 24 24 0 1 1 48 0zM88 352a24 24 0 1 1 0-48 24 24 0 1 1 0 48zm128-24a24 24 0 1 1 -48 0 24 24 0 1 1 48 0zm80 24a24 24 0 1 1 0-48 24 24 0 1 1 0 48zM64 424c0-13.3 10.7-24 24-24l112 0c13.3 0 24 10.7 24 24s-10.7 24-24 24L88 448c-13.3 0-24-10.7-24-24zm232-24c13.3 0 24 10.7 24 24s-10.7 24-24 24-24-10.7-24-24 10.7-24 24-24z"/></svg>
+                <span>Illustrative estimate only. Actual results vary by industry, offer and budget and are not guaranteed.</span>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 bg-[#030814]/90 p-6 rounded-2xl border border-brand-lime/20 text-center space-y-4">
+              <div>
+                <span class="text-[11px] text-slate-400 uppercase tracking-wider block">Estimated Monthly Revenue Potential</span>
+                <span id="projectedRevenue" class="text-3xl sm:text-4xl font-extrabold text-brand-lime">₹ 1,50,000</span>
+              </div>
+              <div class="grid grid-cols-2 gap-3 pt-3 border-t border-white/10 text-xs">
+                <div>
+                  <span class="text-slate-400 block text-[11px]">Estimated High-Intent Leads</span>
+                  <span id="projectedLeads" class="text-lg font-bold text-white">132 - 192</span>
+                </div>
+                <div class="border-l border-white/10">
+                  <span class="text-slate-400 block text-[11px]">Illustrative ROAS</span>
+                  <span id="projectedRoas" class="text-lg font-bold text-white">3.0x</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Consultation Booker & Direct Contact Details -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Consultation Form -->
+          <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 class="text-2xl font-extrabold text-[#081329] mb-2">Request Your Free Strategy Audit</h3>
+            <p class="text-slate-500 text-xs sm:text-sm mb-6">Fill in your requirements and we will review your digital presence and get back to you.</p>
+
+            <form id="consultationForm" onsubmit="handleConsultationSubmit(event)" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Your Name *</label>
+                  <input type="text" required placeholder="e.g. Rahul Sharma" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-blueAccent text-sm">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Phone Number / WhatsApp *</label>
+                  <input type="tel" required placeholder="+91 98765 43210" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-blueAccent text-sm">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Business / Brand Name *</label>
+                  <input type="text" required placeholder="e.g. Apex Diagnostics" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-blueAccent text-sm">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Current Website / Instagram URL</label>
+                  <input type="url" placeholder="https://yourbrand.com" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-blueAccent text-sm">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Primary Objective *</label>
+                  <select required class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-blueAccent text-sm bg-white">
+                    <option value="">Select Service...</option>
+                    <option value="Custom Web Development & Website Design">Web Development &amp; Website Design</option>
+                    <option value="Google & Meta High-ROAS Ads">High-ROAS Meta &amp; Google Ads</option>
+                    <option value="Google Business Profile & Local SEO">Google SEO &amp; Organic Ranking</option>
+                    <option value="AI Automation for Business">AI Automation for Business</option>
+                    <option value="Full Digital Transformation">Complete Digital Retainer</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Estimated Monthly Budget</label>
+                  <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-blueAccent text-sm bg-white">
+                    <option value="Under ₹35k">Under ₹35,000 / $500</option>
+                    <option value="₹35k - ₹75k">₹35,000 - ₹75,000</option>
+                    <option value="₹75k - ₹1.5L">₹75,000 - ₹1,50,000</option>
+                    <option value="₹1.5L+">₹1,50,000+ (Aggressive Scale)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Project Details or Current Challenges</label>
+                <textarea rows="3" placeholder="Tell us about your target customer, current conversion issues, or timeline..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brand-blueAccent text-sm"></textarea>
+              </div>
+
+              <button type="submit" class="btn-lime w-full py-3.5 rounded-xl text-sm font-bold flex items-center justify-center gap-2">
+                <span>Confirm &amp; Book Free Consultation</span>
+                <svg class="ic text-xs" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Direct Office & Contact Info -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="bg-[#030814] text-white p-8 rounded-3xl border border-white/10 shadow-lg space-y-6">
+              <div>
+                <div class="text-brand-lime text-2xl font-extrabold tracking-tight">Globmark Digital Agency</div>
+                <h4 class="text-xl font-bold mt-1">Global Headquarters &amp; Operations</h4>
+                <p class="text-slate-400 text-xs sm:text-sm mt-1">Serving high-growth brands across India, North America, the UK, Europe, UAE, and APAC.</p>
+              </div>
+
+              <div class="space-y-4 text-xs sm:text-sm">
+                <div class="flex items-start gap-3.5">
+                  <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-brand-lime flex-shrink-0 mt-0.5">
+                    <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M0 188.6C0 84.4 86 0 192 0S384 84.4 384 188.6c0 119.3-120.2 262.3-170.4 316.8-11.8 12.8-31.5 12.8-43.3 0-50.2-54.5-170.4-197.5-170.4-316.8zM192 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"/></svg>
+                  </div>
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Primary Development Studio</span>
+                    <span class="text-slate-200 font-medium">Maharashtra, India (Operating Worldwide)</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3.5">
+                  <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-brand-lime flex-shrink-0 mt-0.5">
+                    <svg class="ic" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></svg>
+                  </div>
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Direct Inquiries</span>
+                    <span class="text-slate-200 font-medium">hello@globmark.agency / contact@globmark.agency</span>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3.5">
+                  <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-brand-lime flex-shrink-0 mt-0.5">
+                    <svg class="ic" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 0a256 256 0 1 1 0 512 256 256 0 1 1 0-512zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                  </div>
+                  <div>
+                    <span class="text-slate-400 block text-[11px]">Operational Hours</span>
+                    <span class="text-slate-200 font-medium">Monday - Saturday (Global Client Coverage)</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick WhatsApp Chat Trigger -->
+              <div class="pt-4 border-t border-white/10">
+                <!-- TODO: replace 919999999999 with your real WhatsApp number (country code + number, no + or spaces) -->
+                <a href="https://wa.me/919999999999?text=Hi%20Globmark%20Team,%20I%20would%20like%20to%20discuss%20a%20project%20for%20my%20business." target="_blank" rel="noopener" class="w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 text-xs sm:text-sm transition-colors shadow-md">
+                  <svg class="ic text-lg" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M380.9 97.1c-41.9-42-97.7-65.1-157-65.1-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480 117.7 449.1c32.4 17.7 68.9 27 106.1 27l.1 0c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3 18.6-68.1-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1s56.2 81.2 56.1 130.5c0 101.8-84.9 184.6-186.6 184.6zM325.1 300.5c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8s-14.3 18-17.6 21.8c-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7 .9-6.9-.5-9.7s-12.5-30.1-17.1-41.2c-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2s-9.7 1.4-14.8 6.9c-5.1 5.6-19.4 19-19.4 46.3s19.9 53.7 22.6 57.4c2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4s4.6-24.1 3.2-26.4c-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+                  <span>Chat Directly on WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Global Coverage Card -->
+            <div class="bg-white p-5 rounded-3xl border border-slate-200 overflow-hidden shadow-sm">
+              <div class="flex items-center justify-between mb-3 text-xs font-bold text-slate-700">
+                <span><svg class="ic text-brand-blueAccent mr-1.5" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M55.7 199.7l30.9 30.9c6 6 14.1 9.4 22.6 9.4l21.5 0c8.5 0 16.6 3.4 22.6 9.4l29.3 29.3c6 6 9.4 14.1 9.4 22.6l0 37.5c0 8.5 3.4 16.6 9.4 22.6l13.3 13.3c6 6 9.4 14.1 9.4 22.6l0 18.7c0 17.7 14.3 32 32 32s32-14.3 32-32l0-2.7c0-8.5 3.4-16.6 9.4-22.6l45.3-45.3c6-6 9.4-14.1 9.4-22.6l0-34.7c0-17.7-14.3-32-32-32l-82.7 0c-8.5 0-16.6-3.4-22.6-9.4l-16-16c-4.2-4.2-6.6-10-6.6-16 0-12.5 10.1-22.6 22.6-22.6l34.7 0c12.5 0 22.6-10.1 22.6-22.6 0-6-2.4-11.8-6.6-16l-19.7-19.7C242 130 240 125.1 240 120s2-10 5.7-13.7l17.3-17.3c5.8-5.8 9.1-13.7 9.1-21.9 0-7.2-2.4-13.7-6.4-18.9-3.2-.1-6.4-.2-9.6-.2-95.4 0-175.7 64.2-200.3 151.7zM464 256c0-34.6-8.4-67.2-23.4-95.8-6.4 .9-12.7 3.9-17.9 9.1l-13.4 13.4c-6 6-9.4 14.1-9.4 22.6l0 34.7c0 17.7 14.3 32 32 32l24.1 0c2.5 0 5-.3 7.3-.8 .4-5 .5-10.1 .5-15.2zM0 256a256 256 0 1 1 512 0 256 256 0 1 1 -512 0z"/></svg> Global Delivery Network</span>
+                <span class="text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded font-bold">Online Delivery</span>
+              </div>
+              <p class="text-xs text-slate-500 leading-relaxed">
+                We work across timezones using Slack, GitHub, Looker Studio, and Google Meet for frictionless project execution and live ad reporting.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+      <!-- ==================== PAGE 7: PRIVACY POLICY ==================== -->
+      <div id="page-privacy" class="page-view hidden">
+        <div class="bg-[#030814] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10">
+          <div class="max-w-4xl mx-auto text-center">
+            <span class="text-brand-lime text-xs font-bold uppercase tracking-widest badge-neon px-4 py-1.5 rounded-full inline-block mb-3">Legal</span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Privacy Policy</h1>
+            <p class="text-slate-300 mt-3 text-sm sm:text-base">How Globmark collects, uses and protects your information.</p>
+            <p class="text-slate-400 mt-2 text-xs">Last updated: November 2026</p>
+          </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-8 text-slate-600 text-sm leading-relaxed">
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">1. Who we are</h2>
+            <p>This website is operated by Globmark Digital Agency ("Globmark", "we", "us"). You can contact us about privacy at <a href="mailto:hello@globmark.agency" class="text-blue-600 hover:underline">hello@globmark.agency</a>. <!-- TODO: add registered business name and address once confirmed by the owner --></p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">2. Information we collect</h2>
+            <p>We only collect information you choose to give us or that is created when you visit the site:</p>
+            <ul class="list-disc pl-5 space-y-1">
+              <li><strong>Consultation form:</strong> your name, phone number or WhatsApp number, business or brand name, website or social URL, objective, estimated budget and project details.</li>
+              <li><strong>Newsletter form:</strong> your email address.</li>
+              <li><strong>WhatsApp or email:</strong> if you contact us by WhatsApp or email, we receive your number or address and the messages you send.</li>
+              <li><strong>Technical data:</strong> basic information such as browser type, device and pages visited, which your browser and our hosting provider may record automatically.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">3. How we use your information</h2>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>To respond to your enquiry and prepare your free strategy audit.</li>
+              <li>To send the newsletter, only if you subscribed. You can unsubscribe at any time.</li>
+              <li>To keep the website secure and understand how it is used so we can improve it.</li>
+              <li>To meet legal or accounting obligations.</li>
+            </ul>
+            <p>We do not sell your personal information.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">4. Who we share it with</h2>
+            <p>We use trusted service providers to run the website and handle enquiries, for example website hosting, a form-handling service that delivers your form submission to us, and email or messaging tools. They may process your information only to provide their service to us. If we add analytics or advertising tools (such as Google Analytics or Meta Pixel), they may collect usage data and set cookies, and this policy will be updated. We may also disclose information if required by law.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">5. Cookies</h2>
+            <p>At the time of writing, this website does not set its own tracking cookies. Third-party tools we add later may use cookies, and where required we will ask for your consent.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">6. How long we keep it</h2>
+            <p>We keep enquiry details for as long as needed to respond to you and manage any resulting work, and for as long as the law requires us to keep business records. Newsletter details are kept until you unsubscribe. You can ask us to delete your information at any time.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">7. Your rights</h2>
+            <p>You can ask us to show you the personal information we hold about you, correct it, delete it, or stop using it for a purpose such as the newsletter. Depending on where you live (for example India or the European Economic Area), you may have additional rights under local data protection law. To use any of these rights, email <a href="mailto:hello@globmark.agency" class="text-blue-600 hover:underline">hello@globmark.agency</a>.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">8. Security</h2>
+            <p>We take reasonable steps to protect your information, including using secure (HTTPS) connections. No method of transmission over the internet is completely secure, so we cannot guarantee absolute security.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">9. Children</h2>
+            <p>Our services are for businesses and are not directed at children. We do not knowingly collect information from children.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">10. Changes to this policy</h2>
+            <p>We may update this policy from time to time. The date at the top shows when it was last changed.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">11. Contact</h2>
+            <p>Questions about this policy? Email <a href="mailto:hello@globmark.agency" class="text-blue-600 hover:underline">hello@globmark.agency</a>.</p>
+          </section>
+        </div>
+      </div>
+
+      <!-- ==================== PAGE 8: TERMS OF SERVICE ==================== -->
+      <div id="page-terms" class="page-view hidden">
+        <div class="bg-[#030814] text-white py-16 px-4 sm:px-6 lg:px-8 border-b border-white/10">
+          <div class="max-w-4xl mx-auto text-center">
+            <span class="text-brand-lime text-xs font-bold uppercase tracking-widest badge-neon px-4 py-1.5 rounded-full inline-block mb-3">Legal</span>
+            <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight">Terms of Service</h1>
+            <p class="text-slate-300 mt-3 text-sm sm:text-base">The rules for using this website and our free strategy audit.</p>
+            <p class="text-slate-400 mt-2 text-xs">Last updated: November 2026</p>
+          </div>
+        </div>
+
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-8 text-slate-600 text-sm leading-relaxed">
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">1. About these terms</h2>
+            <p>These terms apply to your use of this website, operated by Globmark Digital Agency ("Globmark", "we", "us"). By using the site you agree to them. If you do not agree, please do not use the site. Paid work is covered by a separate written proposal or agreement, which takes priority over these terms for that work.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">2. Our services</h2>
+            <p>Globmark offers web development and website design, performance digital marketing, Google Business Profile and SEO, YouTube marketing, social media ads and AI automation. Descriptions on this website are general information and are not an offer that can be accepted on its own. The scope, price and timeline of any project are agreed in writing before work starts.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">3. Free strategy audit</h2>
+            <p>The free strategy audit and any recommendations in it are provided for information only. Requesting one does not create an obligation for either side to work together.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">4. No guarantee of results</h2>
+            <p>Marketing and SEO results depend on many things we do not control, such as your industry, offer, budget, competition and platform changes. Examples, sample projects and estimates on this website, including the ROAS calculator, are illustrative only. Results vary and are not guaranteed.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">5. Using the website</h2>
+            <p>You agree not to misuse the site, including trying to break or overload it, gaining unauthorised access, sending harmful code, or submitting false or unlawful information through our forms.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">6. Intellectual property</h2>
+            <p>The content, design and branding of this website belong to Globmark or its licensors. You may not copy or reuse them without our written permission, except for normal personal viewing and sharing of links.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">7. Third-party links and services</h2>
+            <p>This website may link to third-party sites and tools (for example WhatsApp and social media). We are not responsible for their content or practices.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">8. Limitation of liability</h2>
+            <p>The website and its content are provided "as is". To the extent the law allows, Globmark is not liable for any indirect or consequential loss arising from your use of the website or reliance on its content. Nothing in these terms limits liability that cannot be limited by law.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">9. Privacy</h2>
+            <p>How we handle your personal information is explained in our <a href="/privacy/" onclick="navigate('privacy'); return false;" class="text-blue-600 hover:underline">Privacy Policy</a>.</p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">10. Governing law</h2>
+            <p>These terms are governed by the laws of India, and the courts of India have jurisdiction over any dispute. <!-- TODO: owner to confirm governing law and city of jurisdiction --></p>
+          </section>
+
+          <section class="space-y-2">
+            <h2 class="text-lg font-bold text-[#081329]">11. Changes and contact</h2>
+            <p>We may update these terms from time to time; the date at the top shows the latest version. Questions? Email <a href="mailto:hello@globmark.agency" class="text-blue-600 hover:underline">hello@globmark.agency</a>.</p>
+          </section>
+        </div>
+      </div>
+
+
+  </main>
+
+  <!-- ==================== FOOTER & TRUST BAR ==================== -->
+  <footer class="bg-white border-t border-slate-200 pt-10 pb-8 text-slate-600">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Top Credentials Bar -->
+      <div class="pb-10 border-b border-slate-200 flex flex-wrap items-center justify-between gap-6">
+        
+        <div class="flex items-center gap-6 sm:gap-8">
+          <!-- Meta -->
+          <div class="flex items-center gap-2">
+            <svg class="w-6 h-6 text-[#0064e0]" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 16.5c-2.4 0-4.1-1.6-4.9-3.7-.8-2.1-.2-4.4 1.5-5.7 1.7-1.3 4.1-1.3 5.8 0 1.7 1.3 2.3 3.6 1.5 5.7-.8 2.1-2.5 3.7-4.9 3.7h1z M12 6.5C8.9 6.5 6.3 8.8 5.7 11.8c-.6 3 1.1 5.9 3.9 6.9 2.8 1 5.9 0 7.3-2.5.6-1 1-2.2 1.1-3.4 0-1.8-.7-3.6-2-4.8-1.1-1-2.5-1.5-4-1.5z"/>
+            </svg>
+            <span class="font-extrabold text-base tracking-tight text-[#0064e0]">Meta</span>
+          </div>
+
+          <!-- Google Ads -->
+          <div class="flex items-center gap-2">
+            <svg class="w-6 h-6" viewBox="0 0 48 48">
+              <path fill="#FBBC04" d="M10.7 27.6l10.9-18.9c1.4-2.4 4.5-3.3 6.9-1.9 2.4 1.4 3.3 4.5 1.9 6.9L19.5 32.6c-1.4 2.4-4.5 3.3-6.9 1.9-2.4-1.4-3.3-4.5-1.9-6.9z"/>
+              <path fill="#4285F4" d="M37.3 32.6l-10.9-18.9c-1.4-2.4-4.5-3.3-6.9-1.9-2.4 1.4-3.3 4.5-1.9 6.9l10.9 18.9c1.4 2.4 4.5 3.3 6.9 1.9 2.4-1.4 3.3-4.5 1.9-6.9z"/>
+              <circle fill="#34A853" cx="15.2" cy="34.5" r="5.2"/>
+            </svg>
+            <span class="font-bold text-xs sm:text-sm text-slate-800">Google Ads</span>
+          </div>
+
+          <!-- Google Partner -->
+          <div class="hidden sm:flex items-center gap-2">
+            <svg viewBox="0 0 24 24" class="w-5 h-5">
+              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+            </svg>
+            <span class="font-semibold text-xs sm:text-sm text-slate-700">Google Partner</span>
+          </div>
+        </div>
+
+        <div class="hidden lg:flex items-center gap-3 text-xs font-medium text-slate-500">
+          <span>Trusted Digital Partner for Scaling Brands Across India &amp; Worldwide</span>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <div class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs shadow-sm">
+            <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"/></svg>
+          </div>
+          <span class="text-xs sm:text-sm font-bold text-slate-800 tracking-tight">Your Success. Our Priority.</span>
+        </div>
+
+      </div>
+
+      <!-- Main Footer Columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 py-10">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <a href="/" onclick="navigate('home'); return false;" class="flex items-center gap-3" aria-label="Globmark Footer Brand">
+            <div class="w-9 h-9 rounded-full bg-slate-900 flex items-center justify-center text-brand-lime">
+              <svg class="ic text-sm" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M338.8-9.9c11.9 8.6 16.3 24.2 10.9 37.8L271.3 224 416 224c13.5 0 25.5 8.4 30.1 21.1s.7 26.9-9.6 35.5l-288 240c-11.3 9.4-27.4 9.9-39.3 1.3s-16.3-24.2-10.9-37.8L176.7 288 32 288c-13.5 0-25.5-8.4-30.1-21.1s-.7-26.9 9.6-35.5l288-240c11.3-9.4 27.4-9.9 39.3-1.3z"/></svg>
+            </div>
+            <span class="text-xl font-extrabold text-slate-900 tracking-tight">Globmark</span>
+          </a>
+          <p class="text-xs sm:text-sm text-slate-500 max-w-sm leading-relaxed">
+            A high-velocity digital marketing and custom software engineering agency. We replace slow templates and wasted ad budgets with measurable revenue systems.
+          </p>
+          <div class="flex items-center gap-3 text-slate-400 pt-1">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all"><svg class="ic text-xs" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all"><svg class="ic text-xs" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></svg></a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all"><svg class="ic text-xs" viewBox="0 0 320 512" fill="currentColor" aria-hidden="true"><path d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"/></svg></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter" class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-all"><svg class="ic text-xs" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M357.2 48L427.8 48 273.6 224.2 455 464 313 464 201.7 318.6 74.5 464 3.8 464 168.7 275.5-5.2 48 140.4 48 240.9 180.9 357.2 48zM332.4 421.8l39.1 0-252.4-333.8-42 0 255.3 333.8z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Navigation</h5>
+          <ul class="space-y-2 text-xs font-medium">
+            <li><a href="/" onclick="navigate('home'); return false;" class="hover:text-blue-600">Home</a></li>
+            <li><a href="/work/" onclick="navigate('work'); return false;" class="hover:text-blue-600">Our Work (Portfolio)</a></li>
+            <li><a href="/about/" onclick="navigate('about'); return false;" class="hover:text-blue-600">About Globmark</a></li>
+            <li><a href="/faqs/" onclick="navigate('faqs'); return false;" class="hover:text-blue-600">FAQs</a></li>
+            <li><a href="/blog/" onclick="navigate('blog'); return false;" class="hover:text-blue-600">Knowledge Hub</a></li>
+            <li><a href="/contact/" onclick="navigate('contact'); return false;" class="hover:text-blue-600">Contact &amp; Audit</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">Services</h5>
+          <ul class="space-y-2 text-xs font-medium">
+            <li><button onclick="openServiceDetail('web')" class="hover:text-blue-600">Web Development &amp; Website Design</button></li>
+            <li><button onclick="openServiceDetail('marketing')" class="hover:text-blue-600">Performance Digital Marketing</button></li>
+            <li><button onclick="openServiceDetail('seo')" class="hover:text-blue-600">Google Business Profile &amp; Global SEO</button></li>
+            <li><button onclick="openServiceDetail('youtube')" class="hover:text-blue-600">YouTube Marketing</button></li>
+            <li><button onclick="openServiceDetail('social')" class="hover:text-blue-600">Social Media Ads</button></li>
+            <li><button onclick="openServiceDetail('ai')" class="hover:text-blue-600">AI Automation for Business</button></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">SEO &amp; Newsletter</h5>
+          <p class="text-xs text-slate-500 mb-3">Get our monthly growth and web engineering teardowns.</p>
+          <form onsubmit="handleNewsletter(event)" class="space-y-2">
+            <input type="email" required placeholder="Enter work email..." class="w-full px-3 py-2 rounded-lg border border-slate-200 text-xs focus:outline-none focus:border-brand-blueAccent" aria-label="Newsletter Email">
+            <button type="submit" class="w-full bg-[#030814] text-white hover:bg-black font-bold py-2 rounded-lg text-xs transition-colors">
+              Subscribe Free
+            </button>
+          </form>
+          <div class="pt-3">
+            <button onclick="openModal('seoModal')" class="inline-flex items-center gap-1.5 text-xs text-blue-600 font-bold hover:underline">
+              <svg class="ic" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M192 64c0-17.7 14.3-32 32-32l64 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-8 0 0 64 120 0c39.8 0 72 32.2 72 72l0 56 8 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l8 0 0-56c0-13.3-10.7-24-24-24l-120 0 0 80 8 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l8 0 0-80-120 0c-13.3 0-24 10.7-24 24l0 56 8 0c17.7 0 32 14.3 32 32l0 64c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l8 0 0-56c0-39.8 32.2-72 72-72l120 0 0-64-8 0c-17.7 0-32-14.3-32-32l0-64z"/></svg>
+              <span>View Sitemap &amp; SEO Tools</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="border-t border-slate-200 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-3">
+        <span>&copy; <span id="currentYear"></span> Globmark Digital Agency. Build &bull; Grow &bull; Scale. All rights reserved.</span>
+        <div class="flex items-center gap-4">
+          <button onclick="openModal('seoModal')" class="hover:underline text-blue-600 font-semibold">Sitemap (XML)</button>
+          <a href="/privacy/" onclick="navigate('privacy'); return false;" class="hover:underline">Privacy Policy</a>
+          <a href="/terms/" onclick="navigate('terms'); return false;" class="hover:underline">Terms of Service</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== INTERACTIVE MODALS ==================== -->
+
+  <!-- SEO, SITEMAP & TECHNICAL AUDIT MODAL (BUILT FOR NON-TECH USERS) -->
+  <div id="seoModal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-[#030814] text-white border border-white/20 rounded-3xl max-w-3xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('seoModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl" aria-label="Close modal">
+        <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-xl bg-brand-lime text-black flex items-center justify-center text-lg font-bold">
+          <svg class="ic" viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M248 88l80 0 0 48-80 0 0-48zm-8-56c-26.5 0-48 21.5-48 48l0 64c0 26.5 21.5 48 48 48l16 0 0 32-224 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0 0 32-16 0c-26.5 0-48 21.5-48 48l0 64c0 26.5 21.5 48 48 48l96 0c26.5 0 48-21.5 48-48l0-64c0-26.5-21.5-48-48-48l-16 0 0-32 192 0 0 32-16 0c-26.5 0-48 21.5-48 48l0 64c0 26.5 21.5 48 48 48l96 0c26.5 0 48-21.5 48-48l0-64c0-26.5-21.5-48-48-48l-16 0 0-32 96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-224 0 0-32 16 0c26.5 0 48-21.5 48-48l0-64c0-26.5-21.5-48-48-48l-96 0zM448 376l8 0 0 48-80 0 0-48 72 0zm-256 0l8 0 0 48-80 0 0-48 72 0z"/></svg>
+        </div>
+        <div>
+          <h3 class="text-xl sm:text-2xl font-extrabold text-white">SEO &amp; Sitemap Toolbox</h3>
+          <p class="text-xs text-brand-lime font-medium">Ready for Google Search Console, Bing, and Search Engine Bots</p>
+        </div>
+      </div>
+
+      <p class="text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+        Because you don't have to be technical, we've pre-configured your website's search engine directives, canonical setup, and XML sitemap. You can copy or download these anytime for your domain.
+      </p>
+
+      <!-- Tab Buttons for SEO Tools -->
+      <div class="flex gap-2 border-b border-white/10 pb-3 mb-4 text-xs font-bold">
+        <button onclick="switchSeoTab('sitemap')" id="tabBtn-sitemap" class="px-4 py-2 rounded-lg bg-brand-lime text-black">XML Sitemap</button>
+        <button onclick="switchSeoTab('robots')" id="tabBtn-robots" class="px-4 py-2 rounded-lg bg-white/10 text-white hover:bg-white/20">robots.txt</button>
+        <button onclick="switchSeoTab('checklist')" id="tabBtn-checklist" class="px-4 py-2 rounded-lg bg-white/10 text-white hover:bg-white/20">SEO Health Checklist</button>
+      </div>
+
+      <!-- Tab 1: XML Sitemap -->
+      <div id="seoTab-sitemap" class="space-y-3">
+        <div class="flex items-center justify-between text-xs text-slate-400">
+          <span>Standard Google XML Sitemap protocol</span>
+          <button onclick="copyToClipboard('sitemapCodeSnippet', 'XML Sitemap copied to clipboard!')" class="text-brand-lime hover:underline flex items-center gap-1 font-bold">
+            <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg> Copy XML
+          </button>
+        </div>
+        <pre class="bg-black/80 p-4 rounded-xl text-xs font-mono text-emerald-400 overflow-x-auto border border-white/10 max-h-52 select-all" id="sitemapCodeSnippet">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/work/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/about/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/faqs/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/blog/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/contact/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/privacy/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+  &lt;url&gt;
+    &lt;loc&gt;https://globmark.agency/terms/&lt;/loc&gt;
+    &lt;lastmod&gt;2026-11-09&lt;/lastmod&gt;
+  &lt;/url&gt;
+&lt;/urlset&gt;</pre>
+      </div>
+
+      <!-- Tab 2: robots.txt -->
+      <div id="seoTab-robots" class="space-y-3 hidden">
+        <div class="flex items-center justify-between text-xs text-slate-400">
+          <span>Search crawler directive file (/robots.txt)</span>
+          <button onclick="copyToClipboard('robotsCodeSnippet', 'robots.txt copied to clipboard!')" class="text-brand-lime hover:underline flex items-center gap-1 font-bold">
+            <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg> Copy robots.txt
+          </button>
+        </div>
+        <pre class="bg-black/80 p-4 rounded-xl text-xs font-mono text-emerald-400 overflow-x-auto border border-white/10 max-h-52 select-all" id="robotsCodeSnippet">User-agent: *
+Allow: /
+
+# Direct search engine crawlers to the sitemap
+Sitemap: https://globmark.agency/sitemap.xml</pre>
+      </div>
+
+      <!-- Tab 3: SEO Checklist -->
+      <div id="seoTab-checklist" class="space-y-3 hidden text-xs text-slate-300">
+        <div class="bg-white/5 p-3 rounded-xl border border-white/10 flex items-start gap-2.5">
+          <svg class="ic text-brand-lime text-base mt-0.5" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg>
+          <div>
+            <strong class="text-white block">JSON-LD Rich Schema Implemented:</strong>
+            Active Organization, ProfessionalService, WebSite, and Google FAQPage schemas are already injected inside the &lt;head&gt;.
+          </div>
+        </div>
+        <div class="bg-white/5 p-3 rounded-xl border border-white/10 flex items-start gap-2.5">
+          <svg class="ic text-brand-lime text-base mt-0.5" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg>
+          <div>
+            <strong class="text-white block">Single H1 Hierarchy &amp; Semantic Tags:</strong>
+            Standardized heading hierarchy for clean crawlability and keyword relevance.
+          </div>
+        </div>
+        <div class="bg-white/5 p-3 rounded-xl border border-white/10 flex items-start gap-2.5">
+          <svg class="ic text-brand-lime text-base mt-0.5" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M256 512a256 256 0 1 1 0-512 256 256 0 1 1 0 512zM374 145.7c-10.7-7.8-25.7-5.4-33.5 5.3L221.1 315.2 169 263.1c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c5 5 11.8 7.5 18.8 7s13.4-4.1 17.5-9.8L379.3 179.2c7.8-10.7 5.4-25.7-5.3-33.5z"/></svg>
+          <div>
+            <strong class="text-white block">Mobile Friendly &amp; Zero Horizontal Overflow:</strong>
+            Fluid layouts, responsive breakpoints, and minimum 44px touch targets.
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-white/10 flex justify-end">
+        <button onclick="closeModal('seoModal')" class="btn-lime px-6 py-2.5 rounded-full text-xs font-bold">
+          Done &amp; Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Video / Story Modal -->
+  <div id="storyModal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-[#061025] border border-white/20 rounded-3xl max-w-2xl w-full p-6 sm:p-8 text-white relative shadow-2xl">
+      <button onclick="closeModal('storyModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl" aria-label="Close modal">
+        <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+      </button>
+
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-full bg-brand-lime/20 text-brand-lime flex items-center justify-center text-lg">
+          <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M0 96C0 60.7 28.7 32 64 32l320 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 96zM48 368l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm304-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM48 240l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16zm304-16c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0zM48 112l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16L64 96c-8.8 0-16 7.2-16 16zM352 96c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0z"/></svg>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">The Globmark Journey</h3>
+          <span class="text-xs text-brand-lime">Engineering &amp; Growth Retrospective</span>
+        </div>
+      </div>
+
+      <div class="relative aspect-video rounded-2xl bg-black overflow-hidden border border-white/10 mb-5 flex items-center justify-center group">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Team Session" class="w-full h-full object-cover opacity-60" loading="lazy" decoding="async">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+        <div class="relative z-10 text-center px-4">
+          <div class="w-16 h-16 rounded-full bg-brand-lime text-black flex items-center justify-center text-xl mx-auto shadow-lg shadow-brand-lime/40 mb-3 animate-pulse">
+            <svg class="ic ml-1" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M91.2 36.9c-12.4-6.8-27.4-6.5-39.6 .7S32 57.9 32 72l0 368c0 14.1 7.5 27.2 19.6 34.4s27.2 7.5 39.6 .7l336-184c12.8-7 20.8-20.5 20.8-35.1s-8-28.1-20.8-35.1l-336-184z"/></svg>
+          </div>
+          <span class="font-bold text-sm tracking-wide">Interactive Showcase: How We Scale Client Revenue</span>
+        </div>
+      </div>
+
+      <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
+        Founded by software architects and performance marketers, Globmark was created to solve the persistent disconnect between pretty web designs and actual cash receipts. See how our custom Next.js builds improve speed and engagement while our Meta and Google campaigns focus on measurable, ROAS-driven results.
+      </p>
+
+      <div class="flex justify-end gap-3">
+        <button onclick="closeModal('storyModal')" class="px-5 py-2.5 rounded-full border border-white/20 text-xs font-semibold hover:bg-white/10">Close</button>
+        <button onclick="closeModal('storyModal'); navigate('contact');" class="btn-lime px-6 py-2.5 rounded-full text-xs font-bold">Schedule an Intro Call</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service Detail Drawer Modal -->
+  <div id="serviceModal" class="modal-backdrop fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 text-slate-800 relative shadow-2xl">
+      <button onclick="closeModal('serviceModal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 text-xl" aria-label="Close modal">
+        <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+      </button>
+
+      <div class="w-12 h-12 rounded-2xl bg-blue-50 text-brand-blueAccent flex items-center justify-center text-xl mb-4" id="serviceModalIcon">
+        <svg class="ic" viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 150.6 182.6c12.5-12.5 12.5-32.8 0-45.3z"/></svg>
+      </div>
+
+      <h3 class="text-2xl font-extrabold text-[#081329] mb-1" id="serviceModalTitle">Service Scope</h3>
+      <span class="text-xs font-bold text-emerald-600 block mb-4" id="serviceModalBadge">Turnkey Solution</span>
+
+      <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-5" id="serviceModalDesc">
+        Comprehensive description of service deliverables.
+      </p>
+
+      <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100 mb-6">
+        <h5 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Included In This Service</h5>
+        <ul class="text-xs space-y-2 text-slate-700" id="serviceModalFeatures"></ul>
+      </div>
+
+      <div class="flex items-center justify-between gap-4">
+        <div>
+          <span class="text-[11px] text-slate-400 uppercase tracking-wider block">Typical Turnaround</span>
+          <span class="text-xs font-bold text-slate-800" id="serviceModalTimeline">10 - 14 Days</span>
+        </div>
+        <button onclick="closeModal('serviceModal'); navigate('contact');" class="btn-lime px-6 py-2.5 rounded-full text-xs font-bold">
+          Request Custom Proposal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Case Study Detailed Inspection Modal -->
+  <div id="caseStudyModal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-[#030814] text-white border border-white/20 rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('caseStudyModal')" class="absolute top-5 right-5 text-slate-400 hover:text-white text-xl" aria-label="Close modal">
+        <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+      </button>
+
+      <div class="inline-block bg-brand-lime text-black text-[11px] font-extrabold px-3 py-1 rounded-full uppercase tracking-wider mb-2" id="csClientCategory">
+        EdTech &bull; Next.js
+      </div>
+
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-2" id="csTitle">MathsWaala Learning Portal</h3>
+      <p class="text-slate-300 text-xs sm:text-sm mb-6" id="csOverview">Deep dive into project scope and impact.</p>
+
+      <div class="hidden grid-cols-3 gap-3 bg-white/5 p-4 rounded-2xl border border-white/10 mb-6 text-center">
+        <div>
+          <span class="text-[11px] text-slate-400 block" id="csStat1Label">Page Load</span>
+          <span class="text-base sm:text-lg font-bold text-brand-lime" id="csStat1Val">0.38s</span>
+        </div>
+        <div class="border-x border-white/10">
+          <span class="text-[11px] text-slate-400 block" id="csStat2Label">Conversion</span>
+          <span class="text-base sm:text-lg font-bold text-brand-lime" id="csStat2Val">+184%</span>
+        </div>
+        <div>
+          <span class="text-[11px] text-slate-400 block" id="csStat3Label">ROAS</span>
+          <span class="text-base sm:text-lg font-bold text-brand-lime" id="csStat3Val">7.2x</span>
+        </div>
+      </div>
+
+      <div class="space-y-4 text-xs sm:text-sm text-slate-300 mb-6">
+        <div>
+          <h5 class="text-white font-bold text-sm mb-1">The Challenge:</h5>
+          <p id="csChallenge" class="leading-relaxed text-slate-400">Previous site was on shared hosting and crashed during peak ad spikes.</p>
+        </div>
+        <div>
+          <h5 class="text-white font-bold text-sm mb-1">Globmark's Solution:</h5>
+          <p id="csSolution" class="leading-relaxed text-slate-400">Migrated everything to Next.js on Vercel with edge caching, automated CRM lead capture, and custom analytics tracking.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between pt-4 border-t border-white/10">
+        <span class="text-xs text-slate-400">Technology: <strong class="text-white" id="csTech">Next.js 14, Tailwind, Supabase</strong></span>
+        <button onclick="closeModal('caseStudyModal'); navigate('contact');" class="btn-lime px-5 py-2.5 rounded-full text-xs font-bold">
+          Build A Similar System
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Article Reading Modal -->
+  <div id="articleModal" class="modal-backdrop fixed inset-0 z-50 bg-black/85 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-3xl w-full p-6 sm:p-10 text-slate-800 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <button onclick="closeModal('articleModal')" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 text-xl" aria-label="Close modal">
+        <svg class="ic" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M55.1 73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L147.2 256 9.9 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192.5 301.3 329.9 438.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.8 256 375.1 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192.5 210.7 55.1 73.4z"/></svg>
+      </button>
+
+      <span class="text-xs font-bold text-blue-600 uppercase tracking-widest block mb-2" id="articleCategory">Case Study &bull; Marketing</span>
+      <h3 class="text-2xl sm:text-3xl font-extrabold text-[#081329] mb-4 leading-tight" id="articleTitle">Article Title</h3>
+      
+      <div class="flex items-center gap-3 text-xs text-slate-500 pb-5 mb-5 border-b border-slate-200">
+        <div class="w-7 h-7 rounded-full bg-slate-900 text-brand-lime flex items-center justify-center font-bold text-[11px]">GM</div>
+        <span>By Globmark Engineering &amp; Strategy Team</span>
+        <span>&bull;</span>
+        <span id="articleDate">5 min read</span>
+      </div>
+
+      <div class="prose text-xs sm:text-sm text-slate-600 leading-relaxed space-y-4" id="articleBody">
+        <!-- Injected dynamically -->
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-slate-200 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-2 text-xs font-bold text-slate-700">
+          <span>Share this framework:</span>
+          <button onclick="copyCurrentUrl()" class="p-2 rounded-lg bg-slate-100 hover:bg-slate-200"><svg class="ic" viewBox="0 0 576 512" fill="currentColor" aria-hidden="true"><path d="M419.5 96c-16.6 0-32.7 4.5-46.8 12.7-15.8-16-34.2-29.4-54.5-39.5 28.2-24 64.1-37.2 101.3-37.2 86.4 0 156.5 70 156.5 156.5 0 41.5-16.5 81.3-45.8 110.6l-71.1 71.1c-29.3 29.3-69.1 45.8-110.6 45.8-86.4 0-156.5-70-156.5-156.5 0-1.5 0-3 .1-4.5 .5-17.7 15.2-31.6 32.9-31.1s31.6 15.2 31.1 32.9c0 .9 0 1.8 0 2.6 0 51.1 41.4 92.5 92.5 92.5 24.5 0 48-9.7 65.4-27.1l71.1-71.1c17.3-17.3 27.1-40.9 27.1-65.4 0-51.1-41.4-92.5-92.5-92.5zM275.2 173.3c-1.9-.8-3.8-1.9-5.5-3.1-12.6-6.5-27-10.2-42.1-10.2-24.5 0-48 9.7-65.4 27.1L91.1 258.2c-17.3 17.3-27.1 40.9-27.1 65.4 0 51.1 41.4 92.5 92.5 92.5 16.5 0 32.6-4.4 46.7-12.6 15.8 16 34.2 29.4 54.6 39.5-28.2 23.9-64 37.2-101.3 37.2-86.4 0-156.5-70-156.5-156.5 0-41.5 16.5-81.3 45.8-110.6l71.1-71.1c29.3-29.3 69.1-45.8 110.6-45.8 86.6 0 156.5 70.6 156.5 156.9 0 1.3 0 2.6 0 3.9-.4 17.7-15.1 31.6-32.8 31.2s-31.6-15.1-31.2-32.8c0-.8 0-1.5 0-2.3 0-33.7-18-63.3-44.8-79.6z"/></svg> Copy Link</button>
+        </div>
+        <button onclick="closeModal('articleModal'); navigate('contact')" class="btn-lime px-6 py-2 rounded-full text-xs font-bold">
+          Consult With Globmark
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-[#061025] text-white border border-brand-lime/40 px-5 py-3.5 rounded-2xl shadow-2xl flex items-center gap-3 transform translate-y-32 transition-transform duration-300">
+    <div class="w-7 h-7 rounded-full bg-brand-lime text-black flex items-center justify-center text-xs font-bold">
+      <svg class="ic" viewBox="0 0 448 512" fill="currentColor" aria-hidden="true"><path d="M434.8 70.1c14.3 10.4 17.5 30.4 7.1 44.7l-256 352c-5.5 7.6-14 12.3-23.4 13.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l101.5 101.5 234-321.7c10.4-14.3 30.4-17.5 44.7-7.1z"/></svg>
+    </div>
+    <div>
+      <h6 class="text-xs font-bold" id="toastTitle">Success</h6>
+      <p class="text-[11px] text-slate-300" id="toastMsg">Inquiry sent successfully.</p>
+    </div>
+  </div>
+
+  <!-- ==================== JAVASCRIPT APP LOGIC ==================== -->
+  <script src="script.js" defer></script>
+
+</body>
+</html>
